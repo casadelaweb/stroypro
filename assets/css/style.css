@@ -1,102 +1,102 @@
 @charset "UTF-8";
 @font-face {
-    font-family: "iconfont";
-    src: url("fonts/iconfont.ttf?1o1vf3") format("truetype"), url("fonts/iconfont.woff?1o1vf3") format("woff"), url("fonts/iconfont.svg?1o1vf3#iconfont") format("svg");
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
+  font-family: "iconfont";
+  src: url("fonts/iconfont.ttf?1o1vf3") format("truetype"), url("fonts/iconfont.woff?1o1vf3") format("woff"), url("fonts/iconfont.svg?1o1vf3#iconfont") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
 }
 
 .iconfont {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: "iconfont" !important;
-    speak: never;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "iconfont" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .icon-arrow-down:before {
-    content: "";
+  content: "";
 }
 
 .icon-arrow-left:before {
-    content: "";
+  content: "";
 }
 
 .icon-arrow-right:before {
-    content: "";
+  content: "";
 }
 
 .icon-arrow-up:before {
-    content: "";
+  content: "";
 }
 
 .icon-bin:before {
-    content: "";
+  content: "";
 }
 
 .icon-calculator:before {
-    content: "";
+  content: "";
 }
 
 .icon-cart:before {
-    content: "";
+  content: "";
 }
 
 .icon-cart-filled:before {
-    content: "";
+  content: "";
 }
 
 .icon-catalog:before {
-    content: "";
+  content: "";
 }
 
 .icon-close:before {
-    content: "";
+  content: "";
 }
 
 .icon-filters:before {
-    content: "";
+  content: "";
 }
 
 .icon-location:before {
-    content: "";
+  content: "";
 }
 
 .icon-mail:before {
-    content: "";
+  content: "";
 }
 
 .icon-menu:before {
-    content: "";
+  content: "";
 }
 
 .icon-search:before {
-    content: "";
+  content: "";
 }
 
 .icon-sitecreative:before {
-    content: "";
+  content: "";
 }
 
 .icon-tel:before {
-    content: "";
+  content: "";
 }
 
 .icon-telegram:before {
-    content: "";
+  content: "";
 }
 
 .icon-vk:before {
-    content: "";
+  content: "";
 }
 
 .icon-warning:before {
-    content: "";
+  content: "";
 }

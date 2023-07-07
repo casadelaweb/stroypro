@@ -3,190 +3,209 @@
 
 <!DOCTYPE html>
 <html lang="ru">
-  <!-- @import 'head.kit' -->
-  <body>
-    <!-- Контейнер для приложения -->
-    <div id="app" role="application">
-      <!-- @import 'navigation.kit' -->
+<!-- @import 'head.kit' -->
+<body>
+<!-- Контейнер для приложения -->
+<div id="app" role="application">
+  <!-- @import 'navigation.kit' -->
 
-      <!-- Основной контент страницы -->
-      <main role="main">
-        <!-- @import 'breadcrumbs.kit' -->
+  <!-- Основной контент страницы -->
+  <main role="main">
+    <!-- @import 'breadcrumbs.kit' -->
 
-        <section>
-          <div class="container">
-            <div class="catalog-detail-layout">
-              <!-- Контейнер для слайдеров -->
-              <div class="catalog-detail-sliders">
-                <!-- Слайдер с миниатюрами -->
-                <div class="catalog-detail-sliders-thumbs">
-                  <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                      <!-- @import 'catalog-detail-slides-thumbs.kit'-->
-                      <!-- @import 'catalog-detail-slides-thumbs.kit'-->
-                    </div>
-                  </div>
-                </div>
-                <!-- Основной,  большой слайдер -->
-                <div class="catalog-detail-sliders-main">
-                  <!-- Тикеты поверх слайдера -->
-                  <div class="catalog-detail-tickets">
-                    <div class="catalog-detail-tickets-new">Новинка</div>
-                    <div class="catalog-detail-tickets-hit">Хит</div>
-                    <div class="catalog-detail-tickets-discount">Скидка</div>
-                  </div>
-                  <!-- Обертка для слайдера -->
-                  <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                      <!-- @import 'catalog-detail-slides-main.kit'-->
-                      <!-- @import 'catalog-detail-slides-main.kit'-->
-                    </div>
-                  </div>
+    <section>
+      <div class="container">
+        <div class="catalog-detail-layout">
+          <!-- Контейнер для слайдеров -->
+          <div class="catalog-detail-sliders">
+            <!-- Слайдер с миниатюрами -->
+            <div class="catalog-detail-sliders-thumbs">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <!-- @import 'catalog-detail-slides-thumbs.kit'-->
+                  <!-- @import 'catalog-detail-slides-thumbs.kit'-->
                 </div>
               </div>
-              <!-- Информация о товаре -->
-              <div class="catalog-detail-info">
-                <div class="catalog-detail-article">Артикул 223569</div>
-                <h1 class="page-title catalog-detail-title">
-                  <!-- $pageTitle -->
-                </h1>
-                <div class="catalog-detail-prices">
-                  <div class="catalog-detail-price">9 990 ₽</div>
-                  <div class="catalog-detail-price-old">10 990 ₽</div>
-                </div>
-                <div class="catalog-detail-cart">
-                  <button type="button" class="catalog-detail-cart-button" data-add-to-cart>Добавить в корзину</button>
-                  <!-- Количество товара -->
-                  <div class="catalog-detail-quantity quantity-container">
-                    <button type="button" class="quantity-button quantity-button-decrement" title="Уменьшить">-</button>
-                    <!-- Если не указывать data-value-min / data-value-max, по-умолчанию будет 0 и 999 -->
-                    <input type="number" class="quantity-input" value="444" data-value-min="0" data-value-max="445" />
-                    <button type="button" class="quantity-button quantity-button-increment" title="Увеличить">+</button>
-                  </div>
-                </div>
-
-                <div class="catalog-detail-warnings">
-                  <div class="catalog-detail-warnings-item">
-                    <img src="assets/img/lazy.jpg" alt="изображение" class="lazy" data-src="assets/img/catalog-detail-bottom-icon-1.png" />
-                    <span> Стоимость товара может отличаться, уточняйте цену у менеджера </span>
-                  </div>
-                  <div class="catalog-detail-warnings-item">
-                    <img src="assets/img/lazy.jpg" alt="изображение" class="lazy" data-src="assets/img/catalog-detail-bottom-icon-2.png" />
-                    <span>Самовывоз бесплатно</span>
-                  </div>
-                  <div class="catalog-detail-warnings-item">
-                    <img src="assets/img/lazy.jpg" alt="изображение" class="lazy" data-src="assets/img/catalog-detail-bottom-icon-3.png" />
-                    <span>Доставка рассчитывается индивидуально</span>
-                  </div>
+            </div>
+            <!-- Основной,  большой слайдер -->
+            <div class="catalog-detail-sliders-main">
+              <!-- Тикеты поверх слайдера -->
+              <div class="catalog-detail-tickets">
+                <div class="catalog-detail-tickets-new">Новинка</div>
+                <div class="catalog-detail-tickets-hit">Хит</div>
+                <div class="catalog-detail-tickets-discount">Скидка</div>
+              </div>
+              <!-- Обертка для слайдера -->
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <!-- @import 'catalog-detail-slides-main.kit'-->
+                  <!-- @import 'catalog-detail-slides-main.kit'-->
                 </div>
               </div>
             </div>
           </div>
-        </section>
-
-        <section>
-          <!-- Навигация по вкладкам -->
-          <div class="catalog-detail-controls">
-            <div class="container catalog-detail-controls-container">
-              <div class="catalog-detail-controls-item activated" data-tab="#tab-1">Описание</div>
-              <div class="catalog-detail-controls-item" data-tab="#tab-2">Характеристики</div>
-              <div class="catalog-detail-controls-item" data-tab="#tab-3">Доставка и оплата</div>
+          <!-- Информация о товаре -->
+          <div class="catalog-detail-info">
+            <div class="catalog-detail-article">Артикул 223569</div>
+            <h1 class="page-title catalog-detail-title">
+              <!-- $pageTitle -->
+            </h1>
+            <div class="catalog-detail-prices">
+              <div class="catalog-detail-price">9 990 ₽</div>
+              <div class="catalog-detail-price-old">10 990 ₽</div>
             </div>
-          </div>
-          <!-- Вкладки -->
-          <div class="container">
-            <div class="catalog-detail-tabs">
-              <div class="catalog-detail-tab tab activated" id="tab-1">
-                <p>
-                  Облицовочный материал, предназначенный как для жилых, так и для промышленных объектов. Геометрия панелей повторяет форму бревна. В сочетании с полимерным покрытием Print Elite металлический сайдинг «Блок-хаус» имитирует
-                  деревянный фасад.
-                </p>
-
-                <p>Блок-хаус производится в двух модификациях (см. тех. характеристики) на разных производственных площадках. Возможность приобретения конкретной модификации уточняйте у менеджера.</p>
-
-                <p>
-                  <strong> Внимание! Запрещен монтаж на ограждения в одностороннем варианте! </strong>
-                </p>
-
-                <p>Тыльная сторона сайдинга на ограждениях должна быть защищена от ветровой нагрузки (профнастилом, сайдингом).</p>
+            <div class="catalog-detail-cart">
+              <button class="catalog-detail-cart-button" data-add-to-cart type="button">Добавить в корзину</button>
+              <!-- Количество товара -->
+              <div class="catalog-detail-quantity quantity-container">
+                <button class="quantity-button quantity-button-decrement" title="Уменьшить" type="button">-</button>
+                <!-- Если не указывать data-value-min / data-value-max, по-умолчанию будет 0 и 999 -->
+                <input class="quantity-input" data-value-max="445" data-value-min="0" type="number" value="444" />
+                <button class="quantity-button quantity-button-increment" title="Увеличить" type="button">+</button>
               </div>
-              <div class="catalog-detail-tab tab" id="tab-2">
-                <table>
-                  <tbody>
-                    <tr>
-                      <td>Бренд</td>
-                      <td>Grand Line</td>
-                    </tr>
-                    <tr>
-                      <td>Блеск поверхности</td>
-                      <td>Глянцевая</td>
-                    </tr>
-                    <tr>
-                      <td>В резке</td>
-                      <td>Да</td>
-                    </tr>
-                    <tr>
-                      <td>Гарантия</td>
-                      <td>10 лет</td>
-                    </tr>
-                    <tr>
-                      <td>Бренд</td>
-                      <td>Grand Line</td>
-                    </tr>
-                    <tr>
-                      <td>Блеск поверхности</td>
-                      <td>Глянцевая</td>
-                    </tr>
-                    <tr>
-                      <td>В резке</td>
-                      <td>Да</td>
-                    </tr>
-                    <tr>
-                      <td>Гарантия</td>
-                      <td>10 лет</td>
-                    </tr>
-                    <tr>
-                      <td>Бренд</td>
-                      <td>Grand Line</td>
-                    </tr>
-                    <tr>
-                      <td>Блеск поверхности</td>
-                      <td>Глянцевая</td>
-                    </tr>
-                    <tr>
-                      <td>В резке</td>
-                      <td>Да</td>
-                    </tr>
-                    <tr>
-                      <td>Гарантия</td>
-                      <td>10 лет</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div class="catalog-detail-tab tab" id="tab-3">
-                <p>
-                  Являясь всего лишь частью общей картины, непосредственные участники технического прогресса представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть функционально разнесены на
-                  независимые элементы. А также элементы политического процесса обнародованы. Являясь всего лишь частью общей картины, независимые государства освещают чрезвычайно интересные особенности картины в целом, однако конкретные
-                  выводы, разумеется, разоблачены. Каждый из нас понимает очевидную вещь: экономическая повестка сегодняшнего дня предполагает независимые способы реализации существующих финансовых и административных условий. Банальные, но
-                  неопровержимые выводы.
-                </p>
+            </div>
 
-                <p>
-                  Являясь всего лишь частью общей картины, непосредственные участники технического прогресса представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть функционально разнесены на
-                  независимые элементы. А также элементы политического процесса обнародованы. Являясь всего лишь частью общей картины, независимые государства освещают чрезвычайно интересные особенности картины в целом, однако конкретные
-                  выводы, разумеется, разоблачены. Каждый из нас понимает очевидную вещь: экономическая повестка сегодняшнего дня предполагает независимые способы реализации существующих финансовых и административных условий. Банальные, но
-                  неопровержимые выводы.
-                </p>
+            <div class="catalog-detail-warnings">
+              <div class="catalog-detail-warnings-item">
+                <img alt="изображение" class="lazy" data-src="src/assets/img/catalog-detail-bottom-icon-1.png"
+                     src="src/assets/img/lazy.jpg" />
+                <span> Стоимость товара может отличаться, уточняйте цену у менеджера </span>
+              </div>
+              <div class="catalog-detail-warnings-item">
+                <img alt="изображение" class="lazy" data-src="src/assets/img/catalog-detail-bottom-icon-2.png"
+                     src="src/assets/img/lazy.jpg" />
+                <span>Самовывоз бесплатно</span>
+              </div>
+              <div class="catalog-detail-warnings-item">
+                <img alt="изображение" class="lazy" data-src="src/assets/img/catalog-detail-bottom-icon-3.png"
+                     src="src/assets/img/lazy.jpg" />
+                <span>Доставка рассчитывается индивидуально</span>
               </div>
             </div>
           </div>
-        </section>
-      </main>
+        </div>
+      </div>
+    </section>
 
-      <!-- @import 'footer.kit' -->
-    </div>
+    <section>
+      <!-- Навигация по вкладкам -->
+      <div class="catalog-detail-controls">
+        <div class="container catalog-detail-controls-container">
+          <div class="catalog-detail-controls-item activated" data-tab="#tab-1">Описание</div>
+          <div class="catalog-detail-controls-item" data-tab="#tab-2">Характеристики</div>
+          <div class="catalog-detail-controls-item" data-tab="#tab-3">Доставка и оплата</div>
+        </div>
+      </div>
+      <!-- Вкладки -->
+      <div class="container">
+        <div class="catalog-detail-tabs">
+          <div class="catalog-detail-tab tab activated" id="tab-1">
+            <p>
+              Облицовочный материал, предназначенный как для жилых, так и для промышленных объектов. Геометрия панелей
+              повторяет форму бревна. В сочетании с полимерным покрытием Print Elite металлический сайдинг «Блок-хаус»
+              имитирует
+              деревянный фасад.
+            </p>
 
-    <!-- @import 'scripts.kit' -->
-  </body>
+            <p>Блок-хаус производится в двух модификациях (см. тех. характеристики) на разных производственных
+              площадках. Возможность приобретения конкретной модификации уточняйте у менеджера.</p>
+
+            <p>
+              <strong> Внимание! Запрещен монтаж на ограждения в одностороннем варианте! </strong>
+            </p>
+
+            <p>Тыльная сторона сайдинга на ограждениях должна быть защищена от ветровой нагрузки (профнастилом,
+              сайдингом).</p>
+          </div>
+          <div class="catalog-detail-tab tab" id="tab-2">
+            <table>
+              <tbody>
+              <tr>
+                <td>Бренд</td>
+                <td>Grand Line</td>
+              </tr>
+              <tr>
+                <td>Блеск поверхности</td>
+                <td>Глянцевая</td>
+              </tr>
+              <tr>
+                <td>В резке</td>
+                <td>Да</td>
+              </tr>
+              <tr>
+                <td>Гарантия</td>
+                <td>10 лет</td>
+              </tr>
+              <tr>
+                <td>Бренд</td>
+                <td>Grand Line</td>
+              </tr>
+              <tr>
+                <td>Блеск поверхности</td>
+                <td>Глянцевая</td>
+              </tr>
+              <tr>
+                <td>В резке</td>
+                <td>Да</td>
+              </tr>
+              <tr>
+                <td>Гарантия</td>
+                <td>10 лет</td>
+              </tr>
+              <tr>
+                <td>Бренд</td>
+                <td>Grand Line</td>
+              </tr>
+              <tr>
+                <td>Блеск поверхности</td>
+                <td>Глянцевая</td>
+              </tr>
+              <tr>
+                <td>В резке</td>
+                <td>Да</td>
+              </tr>
+              <tr>
+                <td>Гарантия</td>
+                <td>10 лет</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="catalog-detail-tab tab" id="tab-3">
+            <p>
+              Являясь всего лишь частью общей картины, непосредственные участники технического прогресса представляют
+              собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть функционально разнесены
+              на
+              независимые элементы. А также элементы политического процесса обнародованы. Являясь всего лишь частью
+              общей картины, независимые государства освещают чрезвычайно интересные особенности картины в целом, однако
+              конкретные
+              выводы, разумеется, разоблачены. Каждый из нас понимает очевидную вещь: экономическая повестка
+              сегодняшнего дня предполагает независимые способы реализации существующих финансовых и административных
+              условий. Банальные, но
+              неопровержимые выводы.
+            </p>
+
+            <p>
+              Являясь всего лишь частью общей картины, непосредственные участники технического прогресса представляют
+              собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть функционально разнесены
+              на
+              независимые элементы. А также элементы политического процесса обнародованы. Являясь всего лишь частью
+              общей картины, независимые государства освещают чрезвычайно интересные особенности картины в целом, однако
+              конкретные
+              выводы, разумеется, разоблачены. Каждый из нас понимает очевидную вещь: экономическая повестка
+              сегодняшнего дня предполагает независимые способы реализации существующих финансовых и административных
+              условий. Банальные, но
+              неопровержимые выводы.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- @import 'footer.kit' -->
+</div>
+
+<!-- @import 'scripts.kit' -->
+</body>
 </html>

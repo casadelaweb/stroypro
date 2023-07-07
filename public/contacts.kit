@@ -3,92 +3,96 @@
 
 <!DOCTYPE html>
 <html lang="ru">
-  <!-- @import 'head.kit' -->
-  <body>
-    <!-- Контейнер для приложения -->
-    <div id="app" role="application">
-      <!-- @import 'navigation.kit' -->
+<!-- @import 'head.kit' -->
+<body>
+<!-- Контейнер для приложения -->
+<div id="app" role="application">
+  <!-- @import 'navigation.kit' -->
 
-      <!-- Основной контент страницы -->
-      <main role="main">
-        <!-- @import 'breadcrumbs.kit' -->
+  <!-- Основной контент страницы -->
+  <main role="main">
+    <!-- @import 'breadcrumbs.kit' -->
 
-        <section class="contacts-page-section">
-          <div class="container">
-            <h1 class="page-title">
-              <!-- $pageTitle -->
-            </h1>
-            <div class="contacts-page-layout">
-              <div class="contacts-page-info">
-                <div>
-                  <div class="contacts-page-info-row">
-                    <!-- <img src="assets/img/lazy.jpg" alt="адрес" class="lazy" data-src="assets/img/icon-location.svg" /> -->
-                    <div class="iconfont icon-location"></div>
-                    <span> г. Саратов, ул Чернышевского 94 </span>
-                  </div>
-                  <a href="tel:8 (8452) 469-649" class="contacts-page-info-row">
-                    <!-- <img src="assets/img/lazy.jpg" alt="адрес" class="lazy" data-src="assets/img/icon-tel.svg" /> -->
-                    <div class="iconfont icon-tel"></div>
-                    <span> 8 (8452) 469-649 </span>
-                  </a>
-                  <a href="mailto:stroi-pro.a@yandex.ru" class="contacts-page-info-row">
-                    <!-- <img src="assets/img/lazy.jpg" alt="адрес" class="lazy" data-src="assets/img/icon-mail.svg" /> -->
-                    <div class="iconfont icon-mail"></div>
-                    <span> stroi-pro.a@yandex.ru </span>
-                  </a>
-                </div>
-                <div class="contacts-page-info-timetable">
-                  <h2 class="contacts-page-info-title">График работы офиса:</h2>
-                  <div>
-                    Пн. - Пт.: с 8:00 до 19:00 <br />
-                    Сб. - Вс.: с 9:00 до 18:00
-                  </div>
-                </div>
-                <div class="contacts-page-info-timetable">
-                  <h2 class="contacts-page-info-title">График работы пункта самовывоза:</h2>
-                  <div>
-                    Пн. - Пт.: с 8:00 до 19:00 <br />
-                    Сб. - Вс.: с 9:00 до 18:00
-                  </div>
-                </div>
+    <section class="contacts-page-section">
+      <div class="container">
+        <h1 class="page-title">
+          <!-- $pageTitle -->
+        </h1>
+        <div class="contacts-page-layout">
+          <div class="contacts-page-info">
+            <div>
+              <div class="contacts-page-info-row">
+                <!-- <img src="src/assets/img/lazy.jpg" alt="адрес" class="lazy" data-src="src/assets/img/icon-location.svg" /> -->
+                <div class="iconfont icon-location"></div>
+                <span> г. Саратов, ул Чернышевского 94 </span>
               </div>
-              <div class="contacts-page-map">
-                <!-- <img src="assets/img/lazy.jpg" alt="карта" class="lazy" data-src="assets/img/map.png" /> -->
-                <script
-                  type="text/javascript"
-                  charset="utf-8"
-                  async
-                  src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2c6f9339da3afc1efd48da4947e768a435bd35ca87a74ec4e94b6e50771036e0&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"
-                ></script>
+              <a class="contacts-page-info-row" href="tel:8 (8452) 469-649">
+                <!-- <img src="src/assets/img/lazy.jpg" alt="адрес" class="lazy" data-src="src/assets/img/icon-tel.svg" /> -->
+                <div class="iconfont icon-tel"></div>
+                <span> 8 (8452) 469-649 </span>
+              </a>
+              <a class="contacts-page-info-row" href="mailto:stroi-pro.a@yandex.ru">
+                <!-- <img src="src/assets/img/lazy.jpg" alt="адрес" class="lazy" data-src="src/assets/img/icon-mail.svg" /> -->
+                <div class="iconfont icon-mail"></div>
+                <span> stroi-pro.a@yandex.ru </span>
+              </a>
+            </div>
+            <div class="contacts-page-info-timetable">
+              <h2 class="contacts-page-info-title">График работы офиса:</h2>
+              <div>
+                Пн. - Пт.: с 8:00 до 19:00 <br />
+                Сб. - Вс.: с 9:00 до 18:00
+              </div>
+            </div>
+            <div class="contacts-page-info-timetable">
+              <h2 class="contacts-page-info-title">График работы пункта самовывоза:</h2>
+              <div>
+                Пн. - Пт.: с 8:00 до 19:00 <br />
+                Сб. - Вс.: с 9:00 до 18:00
               </div>
             </div>
           </div>
-        </section>
-
-        <section class="feedback-section">
-          <div class="container">
-            <form class="feedback-form">
-              <img src="assets/img/lazy.jpg" alt="декоративная картинка" class="lazy feedback-form-decor-img" data-src="assets/img/feedback-form.png" />
-              <div class="feedback-title">Остались вопросы?</div>
-              <div class="feedback-subtitle">
-                Введите свои данные и мы свяжемся с вами <br />
-                и проконсультируем по любому вопросу
-              </div>
-              <div class="feedback-layout">
-                <input type="text" class="form-input feedback-form-input" placeholder="Имя" required />
-                <input type="tel" class="form-input feedback-form-input" placeholder="+7 (___) ___-__-__" required />
-                <input type="text" class="form-input feedback-form-input" placeholder="Email" required />
-                <button type="submit" class="form-submit feedback-form-submit">Отправить</button>
-              </div>
-              <div class="feedback-note form-note">Нажимая на кнопку “Отправить” вы даете согласие на хранение и обработку персональных данных</div>
-            </form>
+          <div class="contacts-page-map">
+            <!-- <img src="src/assets/img/lazy.jpg" alt="карта" class="lazy" data-src="src/assets/img/map.png" /> -->
+            <script
+              async
+              charset="utf-8"
+              src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2c6f9339da3afc1efd48da4947e768a435bd35ca87a74ec4e94b6e50771036e0&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"
+              type="text/javascript"
+            ></script>
           </div>
-        </section>
-      </main>
+        </div>
+      </div>
+    </section>
 
-      <!-- @import 'footer.kit' -->
-    </div>
+    <section class="feedback-section">
+      <div class="container">
+        <form class="feedback-form">
+          <img alt="декоративная картинка" class="lazy feedback-form-decor-img"
+               data-src="src/assets/img/feedback-form.png"
+               src="src/assets/img/lazy.jpg" />
+          <div class="feedback-title">Остались вопросы?</div>
+          <div class="feedback-subtitle">
+            Введите свои данные и мы свяжемся с вами <br />
+            и проконсультируем по любому вопросу
+          </div>
+          <div class="feedback-layout">
+            <input class="form-input feedback-form-input" placeholder="Имя" required type="text" />
+            <input class="form-input feedback-form-input" placeholder="+7 (___) ___-__-__" required type="tel" />
+            <input class="form-input feedback-form-input" placeholder="Email" required type="text" />
+            <button class="form-submit feedback-form-submit" type="submit">Отправить</button>
+          </div>
+          <div class="feedback-note form-note">Нажимая на кнопку “Отправить” вы даете согласие на хранение и обработку
+            персональных данных
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
 
-    <!-- @import 'scripts.kit' -->
-  </body>
+  <!-- @import 'footer.kit' -->
+</div>
+
+<!-- @import 'scripts.kit' -->
+</body>
 </html>

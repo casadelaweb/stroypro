@@ -1,22 +1,14 @@
 // Импортируем слайдер
 import Swiper from './libs/swiper-bundle.js'
-
 // Импортируем ленивую загрузку
 import LazyLoad from './libs/lazyload.esm.js'
-
 // Импортируем фенсибокс
 import Fancybox from './libs/fancybox.esm.js'
-
 // Импортируем псевдоселекты
 import PseudoSelect from './libs/pseudo-select.js'
-
 // Импортируем маску
 import IMask from './libs/imask.js'
-
-import noUiSlider from './libs/nouislider.js';
-
-// Использовать строгий режим
-('use strict')
+import noUiSlider from './libs/nouislider.js'
 
 // Скрипты приложения
 function App() {
@@ -30,9 +22,9 @@ function App() {
     // Навигация
     function Navigation() {
       // Получаем ссылки на категории внутри большого меню
-      const links = document.querySelectorAll('.navigation-menu-categories-link')
+      const links = document.body.querySelectorAll('.navigation-menu-categories-link')
       // Получаем контейнеры с подкатегориями
-      const contents = document.querySelectorAll('.navigation-menu-category-content')
+      const contents = document.body.querySelectorAll('.navigation-menu-category-content')
 
       // Перебираем все ссылки
       links.forEach((link, index) => {
@@ -74,7 +66,7 @@ function App() {
       })
 
       // получаем навигацию
-      const nav = document.querySelector('.navigation')
+      const nav = document.body.querySelector('.navigation')
       // получаем нижнюю панель навигации с быстрыми ссылками
       const navBottom = nav.querySelector('.navigation-bottom')
       // Прослушиваем скролл
@@ -100,8 +92,8 @@ function App() {
     Navigation()
 
     // Маска для телефона
-    document.querySelectorAll('[type=\'tel\']').forEach((element) => {
-      const phoneMask = IMask(element, { mask: '+{7}(000)000-00-00', })
+    document.body.querySelectorAll('[type=\'tel\']').forEach((element) => {
+      IMask(element, { mask: '+{7}(000)000-00-00', })
     })
 
     // Активируем псевдоселект
@@ -124,7 +116,7 @@ function App() {
         watchSlidesVisibility: true,
       }
 
-      const indexBannerMobile = new Swiper('.header-banner-mobile-slider .swiper-container', {
+      new Swiper('.header-banner-mobile-slider .swiper-container', {
         ...generalSettings,
         loop: true,
         pagination: {
@@ -133,7 +125,7 @@ function App() {
         },
       })
 
-      const ourPartners = new Swiper('.our-partners-slider .swiper-container', {
+      new Swiper('.our-partners-slider .swiper-container', {
         ...generalSettings,
         loop: true,
         // Навигация
@@ -146,9 +138,6 @@ function App() {
           0: {
             slidesPerView: 2.2,
             spaceBetween: 15,
-          },
-          539.5: {
-            // slidesPerView: 2,
           },
           767.5: {
             // slidesPerView: 2,
@@ -167,7 +156,7 @@ function App() {
       })
 
       // Объекты построенные из наших материалов
-      const objectsOurMaterialsSlider = new Swiper('.objects-our-materials-slider .swiper-container', {
+      new Swiper('.objects-our-materials-slider .swiper-container', {
         ...generalSettings,
         loop: false,
         pagination: {
@@ -187,15 +176,12 @@ function App() {
             slidesPerView: 2,
             spaceBetween: 20,
           },
-          1023.5: {
-            // slidesPerView: 2
-          },
           1199.5: { slidesPerView: 2.2, },
         },
       })
 
       // Популярные товары
-      const popularSlider = new Swiper('.popular-slider .swiper-container', {
+      new Swiper('.popular-slider .swiper-container', {
         ...generalSettings,
         loop: true,
 
@@ -246,7 +232,7 @@ function App() {
     // Обновить стоимость во всех карточках корзины
     function updateCartCardsSummary() {
       // Получаем все карточки на странице корзины
-      const cards = document.querySelectorAll('[data-cart=card]')
+      const cards = document.body.querySelectorAll('[data-cart=card]')
 
       // Проверка на пустоту
       if (cards.length > 0) {
@@ -284,21 +270,21 @@ function App() {
     // Обновляем блок с финальным расчетом стоимости
     function updateCartResult() {
       // Контейнер для промежуточного результата
-      const resultGoods = document.querySelector('[data-cart=result-goods]')
+      const resultGoods = document.body.querySelector('[data-cart=result-goods]')
       // Контейнер для финальный результат
-      const resultFinal = document.querySelector('[data-cart=result-final]')
+      const resultFinal = document.body.querySelector('[data-cart=result-final]')
       // На текущий момент нет разницы между промежуточным и финальным результатом
 
       // Контейнер для количества товаров
-      const resultQuantity = document.querySelector('[data-cart=result-quantity]')
+      const resultQuantity = document.body.querySelector('[data-cart=result-quantity]')
 
       // Получаем все карточки на странице и сразу преобразуем коллекцию в массив
-      const cardsAll = [ ...document.querySelectorAll('[data-cart=card]'), ]
+      const cardsAll = [ ...document.body.querySelectorAll('[data-cart=card]'), ]
       // Фильтруем карточки (не должно быть display:none)
-      const cardsFiltered = cardsAll.filter((card) => getComputedStyle(card).display != 'none')
+      const cardsFiltered = cardsAll.filter((card) => getComputedStyle(card).display !== 'none')
 
       // Получаем блок с заглушкой
-      const thumbEmpty = document.querySelector('[data-cart=thumb-empty]')
+      const thumbEmpty = document.body.querySelector('[data-cart=thumb-empty]')
 
       // Резервируем переменную для значения
       let resultValue = 0
@@ -425,7 +411,7 @@ function App() {
         // Перебираем массив селекторов
         selectors.forEach((selector) => {
           // Получаем целевые элементы на странице
-          const targets = document.querySelectorAll(selector)
+          const targets = document.body.querySelectorAll(selector)
           // Проверка на пустоту
           if (targets.length > 0) {
             // Перебираем все целевые элементы
@@ -439,8 +425,8 @@ function App() {
 
       // Переключаем возможность скролла для мобильной навигации
       if (event.target.closest('.navigation-mobile-button')) {
-        document.querySelector('html').classList.toggle('locked')
-        document.querySelector('body').classList.toggle('locked')
+        document.body.querySelector('html').classList.toggle('locked')
+        document.body.querySelector('body').classList.toggle('locked')
       }
 
       // Мобильное навигационное меню
@@ -449,7 +435,7 @@ function App() {
       if (event.target.closest('.navigation-mobile-button')) {
         // Исполняем с небольшой задержкой
         setTimeout(() => {
-          document.querySelectorAll('[data-menu-layer]').forEach((element) => {
+          document.body.querySelectorAll('[data-menu-layer]').forEach((element) => {
             element.classList.remove('activated')
           })
         }, 334)
@@ -465,7 +451,7 @@ function App() {
 
         // Скроллим наверх внутри меню с небольшой задержкой
         setTimeout(function () {
-          document.querySelector('.navigation-mobile-fullscreen').scroll({
+          document.body.querySelector('.navigation-mobile-fullscreen').scroll({
             top: 0,
             left: 0,
             behavior: 'smooth',
@@ -487,14 +473,14 @@ function App() {
         // Переключаем вкладки
         const targetSelector = event.target.closest('[data-tab]').getAttribute('data-tab')
 
-        document.querySelectorAll('.tab').forEach((tab) => {
+        document.body.querySelectorAll('.tab').forEach((tab) => {
           tab.classList.remove('activated')
         })
-        document.querySelectorAll('[data-tab]').forEach((tab) => {
+        document.body.querySelectorAll('[data-tab]').forEach((tab) => {
           tab.classList.remove('activated')
         })
 
-        document.querySelectorAll(targetSelector).forEach((element) => {
+        document.body.querySelectorAll(targetSelector).forEach((element) => {
           element.classList.add('activated')
         })
         event.target.closest('[data-tab]').classList.add('activated')
@@ -503,8 +489,8 @@ function App() {
       // Небольшая анимация при добавлении в корзину
       if (event.target.closest('[data-add-to-cart]')) {
         const icons = [
-          document.querySelector('.navigation-cart-quantity'),
-          document.querySelector('.navigation-mobile-cart-quantity'),
+          document.body.querySelector('.navigation-cart-quantity'),
+          document.body.querySelector('.navigation-mobile-cart-quantity'),
         ]
 
         icons.forEach((icon) => {
@@ -520,17 +506,17 @@ function App() {
 
       // Фильтры в каталоге
       if (event.target.closest('[data-open-filters]')) {
-        document.querySelector('.catalog-inner-aside').classList.add('activated')
-        document.querySelector('.overlay').classList.add('activated')
-        document.querySelector('html').classList.add('locked')
-        document.querySelector('body').classList.add('locked')
+        document.body.querySelector('.catalog-inner-aside').classList.add('activated')
+        document.body.querySelector('.overlay').classList.add('activated')
+        document.body.querySelector('html').classList.add('locked')
+        document.body.querySelector('body').classList.add('locked')
       }
       // Закрываем фильтры при клике на оверлей
       if (event.target.closest('.overlay')) {
-        document.querySelector('.catalog-inner-aside').classList.remove('activated')
-        document.querySelector('.overlay').classList.remove('activated')
-        document.querySelector('html').classList.remove('locked')
-        document.querySelector('body').classList.remove('locked')
+        document.body.querySelector('.catalog-inner-aside').classList.remove('activated')
+        document.body.querySelector('.overlay').classList.remove('activated')
+        document.body.querySelector('html').classList.remove('locked')
+        document.body.querySelector('body').classList.remove('locked')
       }
 
       // Корзина
@@ -677,7 +663,7 @@ function App() {
         },
       })
 
-      const sliderMain = new Swiper('.catalog-detail-sliders-main .swiper-container', {
+      new Swiper('.catalog-detail-sliders-main .swiper-container', {
         direction: 'horizontal',
         loop: false,
         grabCursor: false,
@@ -771,4 +757,4 @@ function App() {
 }
 
 // Экспортируем скрипты приложения
-export default App()
+export default App

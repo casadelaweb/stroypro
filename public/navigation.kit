@@ -1,41 +1,41 @@
 <!-- Навигация -->
-<nav role="navigation" class="navigation">
+<nav class="navigation" role="navigation">
   <div class="navigation-top">
     <div class="container navigation-top-container">
       <div class="navigation-location">
-        <img alt="адрес" class="lazy" src="assets/img/icon-location.svg" />
+        <img alt="адрес" class="lazy" src="src/assets/img/icon-location.svg" />
         <span> г. Саратов, ул. Чернышевского 94 </span>
       </div>
-      <a href="mailto:stroi-pro.a@yandex.ru" class="navigation-email">
-        <img alt="электронная почта" class="lazy" src="assets/img/icon-mail.svg" />
+      <a class="navigation-email" href="mailto:stroi-pro.a@yandex.ru">
+        <img alt="электронная почта" class="lazy" src="src/assets/img/icon-mail.svg" />
         <span> stroi-pro.a@yandex.ru </span>
       </a>
 
       <div class="navigation-messengers">
-        <a href="https://vk.com/" title="Перейти в наш VK" target="_blank" rel="noopener noreferrer">
-          <img alt="vk" class="lazy" src="assets/img/icon-vk.svg" />
+        <a href="https://vk.com/" rel="noopener noreferrer" target="_blank" title="Перейти в наш VK">
+          <img alt="vk" class="lazy" src="src/assets/img/icon-vk.svg" />
         </a>
-        <a href="https://telegram.org" title="Перейти в Telegram" target="_blank" rel="noopener noreferrer">
-          <img alt="telegram" class="lazy" src="assets/img/icon-telegram.svg" />
+        <a href="https://telegram.org" rel="noopener noreferrer" target="_blank" title="Перейти в Telegram">
+          <img alt="telegram" class="lazy" src="src/assets/img/icon-telegram.svg" />
         </a>
       </div>
     </div>
   </div>
   <div class="navigation-middle">
     <div class="container navigation-middle-container">
-      <a href="index.html" class="navigation-logo">
-        <img alt="логотип" class="lazy" src="assets/img/navigation-logo.png" />
+      <a class="navigation-logo" href="index.html">
+        <img alt="логотип" class="lazy" src="src/assets/img/navigation-logo.png" />
       </a>
       <button class="navigation-calculator-button" type="button">
         <span>Калькулятор</span>
-        <img src="assets/img/icon-down.png" alt="калькулятор" />
+        <img alt="калькулятор" src="src/assets/img/icon-down.png" />
       </button>
       <div class="search-container navigation-search">
-        <input type="search" placeholder="Введите запрос..." class="search-input" />
+        <input class="search-input" placeholder="Введите запрос..." type="search" />
 
         <!-- Кнопка искать -->
-        <button type="button" class="search-button">
-          <!-- <img alt="искать" class="lazy" src="assets/img/icon-search.svg" /> -->
+        <button class="search-button" type="button">
+          <!-- <img alt="искать" class="lazy" src="src/assets/img/icon-search.svg" /> -->
           <div class="iconfont icon-search"></div>
         </button>
 
@@ -44,30 +44,30 @@
           <div class="iconfont icon-close"></div>
         </button> -->
       </div>
-      <a href="tel:8 (8452) 469-649" class="navigation-tel">
-        <!-- <img alt="телефон" class="lazy" src="assets/img/icon-tel.svg" /> -->
+      <a class="navigation-tel" href="tel:8 (8452) 469-649">
+        <!-- <img alt="телефон" class="lazy" src="src/assets/img/icon-tel.svg" /> -->
         <div class="iconfont icon-tel"></div>
         <div>8 (8452) 469-649</div>
       </a>
-      <a href="cart.html" class="navigation-cart">
-        <img alt="корзина" class="lazy" src="assets/img/icon-cart.svg" />
+      <a class="navigation-cart" href="cart.html">
+        <img alt="корзина" class="lazy" src="src/assets/img/icon-cart.svg" />
         <div class="navigation-cart-quantity">12</div>
       </a>
     </div>
   </div>
   <div class="navigation-bottom" role="menu">
     <div class="container navigation-bottom-container">
-      <button type="button" class="navigation-menu-button" data-toggle=".navigation-menu, .navigation-bottom">
-        <img alt="каталог" class="lazy" src="assets/img/icon-menu.svg" />
+      <button class="navigation-menu-button" data-toggle=".navigation-menu, .navigation-bottom" type="button">
+        <img alt="каталог" class="lazy" src="src/assets/img/icon-menu.svg" />
         <span> Каталог </span>
       </button>
       <div class="navigation-bottom-links">
-        <a href="offers.html" class="navigation-link">Акции</a>
-        <a href="text-page.html" class="navigation-link">О компании</a>
-        <a href="text-page.html" class="navigation-link">Производство</a>
-        <a href="solutions.html" class="navigation-link">Готовые решения</a>
-        <a href="text-page.html" class="navigation-link">Доставка и оплата</a>
-        <a href="contacts.html" class="navigation-link">Контакты</a>
+        <a class="navigation-link" href="offers.html">Акции</a>
+        <a class="navigation-link" href="text-page.html">О компании</a>
+        <a class="navigation-link" href="text-page.html">Производство</a>
+        <a class="navigation-link" href="solutions.html">Готовые решения</a>
+        <a class="navigation-link" href="text-page.html">Доставка и оплата</a>
+        <a class="navigation-link" href="contacts.html">Контакты</a>
       </div>
     </div>
   </div>
@@ -77,204 +77,234 @@
     <div class="container navigation-menu-container">
       <!-- Категории товаров -->
       <div class="navigation-menu-categories">
-        <a href="catalog-inner.html" title="Перейти на страницу" class="navigation-menu-categories-link"> Ворота и калитки</a>
-        <a href="catalog-inner.html" title="Перейти на страницу" class="navigation-menu-categories-link"> Заборы и ограждения</a>
-        <a href="catalog-inner.html" title="Перейти на страницу" class="navigation-menu-categories-link"> Сайдинги</a>
-        <a href="catalog-inner.html" title="Перейти на страницу" class="navigation-menu-categories-link"> Фасадные панели</a>
-        <a href="catalog-inner.html" title="Перейти на страницу" class="navigation-menu-categories-link"> Кровля</a>
-        <a href="catalog-inner.html" title="Перейти на страницу" class="navigation-menu-categories-link"> Сад и огород</a>
-        <a href="catalog-inner.html" title="Перейти на страницу" class="navigation-menu-categories-link"> Утеплители и пленки</a>
+        <a class="navigation-menu-categories-link" href="catalog-inner.html" title="Перейти на страницу"> Ворота и
+          калитки</a>
+        <a class="navigation-menu-categories-link" href="catalog-inner.html" title="Перейти на страницу"> Заборы и
+          ограждения</a>
+        <a class="navigation-menu-categories-link" href="catalog-inner.html" title="Перейти на страницу"> Сайдинги</a>
+        <a class="navigation-menu-categories-link" href="catalog-inner.html" title="Перейти на страницу"> Фасадные
+          панели</a>
+        <a class="navigation-menu-categories-link" href="catalog-inner.html" title="Перейти на страницу"> Кровля</a>
+        <a class="navigation-menu-categories-link" href="catalog-inner.html" title="Перейти на страницу"> Сад и
+          огород</a>
+        <a class="navigation-menu-categories-link" href="catalog-inner.html" title="Перейти на страницу"> Утеплители и
+          пленки</a>
       </div>
       <!-- Подкатегории товаров -->
       <div class="navigation-menu-window">
         <div class="navigation-menu-category-content">
           <div class="navigation-menu-group">
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link-header"> Заборы из профнастила </a>
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link"> Стандартный профнастил </a>
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link"> Фигурный профнастил </a>
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link"> Декоративные столбы </a>
+            <a class="navigation-menu-link-header" href="#" title="Перейти на страницу"> Заборы из профнастила </a>
+            <a class="navigation-menu-link" href="#" title="Перейти на страницу"> Стандартный профнастил </a>
+            <a class="navigation-menu-link" href="#" title="Перейти на страницу"> Фигурный профнастил </a>
+            <a class="navigation-menu-link" href="#" title="Перейти на страницу"> Декоративные столбы </a>
           </div>
           <div class="navigation-menu-group">
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link-header"> Штакетник металлический </a>
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link">Штакетник Twin / Twin фигурный </a>
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link"> Штакетник Полукруглый Slim/ Полукруглый Slim фигурный</a>
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link">Круглый штакетник </a>
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link">Круглый штакетник </a>
+            <a class="navigation-menu-link-header" href="#" title="Перейти на страницу"> Штакетник металлический </a>
+            <a class="navigation-menu-link" href="#" title="Перейти на страницу">Штакетник Twin / Twin фигурный </a>
+            <a class="navigation-menu-link" href="#" title="Перейти на страницу"> Штакетник Полукруглый Slim/
+              Полукруглый Slim фигурный</a>
+            <a class="navigation-menu-link" href="#" title="Перейти на страницу">Круглый штакетник </a>
+            <a class="navigation-menu-link" href="#" title="Перейти на страницу">Круглый штакетник </a>
           </div>
           <div class="navigation-menu-group">
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link-header"> Панельные </a>
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link"> Ограждения 3D для частного сектора </a>
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link"> Ограждения 3D для промышленных объектов </a>
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link"> 2D ограждения 2D для промышленных объектов Bastion </a>
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link"> Ограждения для спортплощадок</a>
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link">Ограждения для промышленных объектов из профильной трубы Protect </a>
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link">Газонные ограждения </a>
+            <a class="navigation-menu-link-header" href="#" title="Перейти на страницу"> Панельные </a>
+            <a class="navigation-menu-link" href="#" title="Перейти на страницу"> Ограждения 3D для частного
+              сектора </a>
+            <a class="navigation-menu-link" href="#" title="Перейти на страницу"> Ограждения 3D для промышленных
+              объектов </a>
+            <a class="navigation-menu-link" href="#" title="Перейти на страницу"> 2D ограждения 2D для промышленных
+              объектов Bastion </a>
+            <a class="navigation-menu-link" href="#" title="Перейти на страницу"> Ограждения для спортплощадок</a>
+            <a class="navigation-menu-link" href="#" title="Перейти на страницу">Ограждения для промышленных объектов из
+              профильной трубы Protect </a>
+            <a class="navigation-menu-link" href="#" title="Перейти на страницу">Газонные ограждения </a>
           </div>
           <div class="navigation-menu-group">
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link-header">Временное ограждение Practic</a>
+            <a class="navigation-menu-link-header" href="#" title="Перейти на страницу">Временное ограждение Practic</a>
           </div>
           <div class="navigation-menu-group">
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link-header">Временное ограждение Euro</a>
+            <a class="navigation-menu-link-header" href="#" title="Перейти на страницу">Временное ограждение Euro</a>
           </div>
           <div class="navigation-menu-group">
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link-header">Рулонная сетка</a>
+            <a class="navigation-menu-link-header" href="#" title="Перейти на страницу">Рулонная сетка</a>
           </div>
           <div class="navigation-menu-group">
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link-header">Элементы ограждений Locinox</a>
+            <a class="navigation-menu-link-header" href="#" title="Перейти на страницу">Элементы ограждений Locinox</a>
           </div>
           <div class="navigation-menu-group">
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link-header">Парапетные крышки</a>
+            <a class="navigation-menu-link-header" href="#" title="Перейти на страницу">Парапетные крышки</a>
           </div>
           <div class="navigation-menu-group">
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link-header">Заглушки для профильной трубы</a>
+            <a class="navigation-menu-link-header" href="#" title="Перейти на страницу">Заглушки для профильной
+              трубы</a>
           </div>
           <div class="navigation-menu-group">
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link-header"> Заборы из профнастила </a>
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link"> Стандартный профнастил </a>
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link"> Фигурный профнастил </a>
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link"> Декоративные столбы </a>
+            <a class="navigation-menu-link-header" href="#" title="Перейти на страницу"> Заборы из профнастила </a>
+            <a class="navigation-menu-link" href="#" title="Перейти на страницу"> Стандартный профнастил </a>
+            <a class="navigation-menu-link" href="#" title="Перейти на страницу"> Фигурный профнастил </a>
+            <a class="navigation-menu-link" href="#" title="Перейти на страницу"> Декоративные столбы </a>
           </div>
           <div class="navigation-menu-group">
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link-header"> Штакетник металлический </a>
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link">Штакетник Twin / Twin фигурный </a>
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link"> Штакетник Полукруглый Slim/ Полукруглый Slim фигурный</a>
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link">Круглый штакетник </a>
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link">Круглый штакетник </a>
+            <a class="navigation-menu-link-header" href="#" title="Перейти на страницу"> Штакетник металлический </a>
+            <a class="navigation-menu-link" href="#" title="Перейти на страницу">Штакетник Twin / Twin фигурный </a>
+            <a class="navigation-menu-link" href="#" title="Перейти на страницу"> Штакетник Полукруглый Slim/
+              Полукруглый Slim фигурный</a>
+            <a class="navigation-menu-link" href="#" title="Перейти на страницу">Круглый штакетник </a>
+            <a class="navigation-menu-link" href="#" title="Перейти на страницу">Круглый штакетник </a>
           </div>
           <div class="navigation-menu-group">
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link-header"> Панельные </a>
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link"> Ограждения 3D для частного сектора </a>
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link"> Ограждения 3D для промышленных объектов </a>
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link"> 2D ограждения 2D для промышленных объектов Bastion </a>
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link"> Ограждения для спортплощадок</a>
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link">Ограждения для промышленных объектов из профильной трубы Protect </a>
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link">Газонные ограждения </a>
+            <a class="navigation-menu-link-header" href="#" title="Перейти на страницу"> Панельные </a>
+            <a class="navigation-menu-link" href="#" title="Перейти на страницу"> Ограждения 3D для частного
+              сектора </a>
+            <a class="navigation-menu-link" href="#" title="Перейти на страницу"> Ограждения 3D для промышленных
+              объектов </a>
+            <a class="navigation-menu-link" href="#" title="Перейти на страницу"> 2D ограждения 2D для промышленных
+              объектов Bastion </a>
+            <a class="navigation-menu-link" href="#" title="Перейти на страницу"> Ограждения для спортплощадок</a>
+            <a class="navigation-menu-link" href="#" title="Перейти на страницу">Ограждения для промышленных объектов из
+              профильной трубы Protect </a>
+            <a class="navigation-menu-link" href="#" title="Перейти на страницу">Газонные ограждения </a>
           </div>
           <div class="navigation-menu-group">
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link-header">Временное ограждение Practic</a>
+            <a class="navigation-menu-link-header" href="#" title="Перейти на страницу">Временное ограждение Practic</a>
           </div>
           <div class="navigation-menu-group">
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link-header">Временное ограждение Euro</a>
+            <a class="navigation-menu-link-header" href="#" title="Перейти на страницу">Временное ограждение Euro</a>
           </div>
           <div class="navigation-menu-group">
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link-header">Рулонная сетка</a>
+            <a class="navigation-menu-link-header" href="#" title="Перейти на страницу">Рулонная сетка</a>
           </div>
           <div class="navigation-menu-group">
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link-header">Элементы ограждений Locinox</a>
+            <a class="navigation-menu-link-header" href="#" title="Перейти на страницу">Элементы ограждений Locinox</a>
           </div>
           <div class="navigation-menu-group">
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link-header">Парапетные крышки</a>
+            <a class="navigation-menu-link-header" href="#" title="Перейти на страницу">Парапетные крышки</a>
           </div>
           <div class="navigation-menu-group">
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link-header">Заглушки для профильной трубы</a>
+            <a class="navigation-menu-link-header" href="#" title="Перейти на страницу">Заглушки для профильной
+              трубы</a>
           </div>
         </div>
         <div class="navigation-menu-category-content">
           <div class="navigation-menu-group">
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link-header"> Штакетник металлический </a>
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link">Штакетник Twin / Twin фигурный </a>
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link"> Штакетник Полукруглый Slim/ Полукруглый Slim фигурный</a>
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link">Круглый штакетник </a>
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link">Круглый штакетник </a>
+            <a class="navigation-menu-link-header" href="#" title="Перейти на страницу"> Штакетник металлический </a>
+            <a class="navigation-menu-link" href="#" title="Перейти на страницу">Штакетник Twin / Twin фигурный </a>
+            <a class="navigation-menu-link" href="#" title="Перейти на страницу"> Штакетник Полукруглый Slim/
+              Полукруглый Slim фигурный</a>
+            <a class="navigation-menu-link" href="#" title="Перейти на страницу">Круглый штакетник </a>
+            <a class="navigation-menu-link" href="#" title="Перейти на страницу">Круглый штакетник </a>
           </div>
           <div class="navigation-menu-group">
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link-header">Временное ограждение Practic</a>
+            <a class="navigation-menu-link-header" href="#" title="Перейти на страницу">Временное ограждение Practic</a>
           </div>
           <div class="navigation-menu-group">
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link-header">Временное ограждение Euro</a>
+            <a class="navigation-menu-link-header" href="#" title="Перейти на страницу">Временное ограждение Euro</a>
           </div>
           <div class="navigation-menu-group">
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link-header">Рулонная сетка</a>
+            <a class="navigation-menu-link-header" href="#" title="Перейти на страницу">Рулонная сетка</a>
           </div>
           <div class="navigation-menu-group">
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link-header">Элементы ограждений Locinox</a>
+            <a class="navigation-menu-link-header" href="#" title="Перейти на страницу">Элементы ограждений Locinox</a>
           </div>
           <div class="navigation-menu-group">
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link-header">Парапетные крышки</a>
+            <a class="navigation-menu-link-header" href="#" title="Перейти на страницу">Парапетные крышки</a>
           </div>
           <div class="navigation-menu-group">
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link-header">Заглушки для профильной трубы</a>
+            <a class="navigation-menu-link-header" href="#" title="Перейти на страницу">Заглушки для профильной
+              трубы</a>
           </div>
         </div>
         <div class="navigation-menu-category-content">В этой категории пока ничего нет.</div>
         <div class="navigation-menu-category-content">
           <div class="navigation-menu-group">
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link-header"> Подкатегория товара </a>
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link"> Пример товара </a>
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link"> Пример товара с относительно длинным названием размером в две или три строки </a>
+            <a class="navigation-menu-link-header" href="#" title="Перейти на страницу"> Подкатегория товара </a>
+            <a class="navigation-menu-link" href="#" title="Перейти на страницу"> Пример товара </a>
+            <a class="navigation-menu-link" href="#" title="Перейти на страницу"> Пример товара с относительно длинным
+              названием размером в две или три строки </a>
           </div>
           <div class="navigation-menu-group">
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link-header"> Далеко-далеко за словесными горами в стране </a>
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link"> Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты</a>
-          </div>
-        </div>
-        <div class="navigation-menu-category-content">
-          <div class="navigation-menu-group">
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link-header"> Заборы из профнастила </a>
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link"> Стандартный профнастил </a>
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link"> Фигурный профнастил </a>
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link"> Декоративные столбы </a>
-          </div>
-          <div class="navigation-menu-group">
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link-header"> Штакетник металлический </a>
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link">Штакетник Twin / Twin фигурный </a>
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link"> Штакетник Полукруглый Slim/ Полукруглый Slim фигурный</a>
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link">Круглый штакетник </a>
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link">Круглый штакетник </a>
-          </div>
-          <div class="navigation-menu-group">
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link-header"> Панельные </a>
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link"> Ограждения 3D для частного сектора </a>
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link"> Ограждения 3D для промышленных объектов </a>
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link"> 2D ограждения 2D для промышленных объектов Bastion </a>
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link"> Ограждения для спортплощадок</a>
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link">Ограждения для промышленных объектов из профильной трубы Protect </a>
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link">Газонные ограждения </a>
-          </div>
-          <div class="navigation-menu-group">
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link-header">Временное ограждение Practic</a>
-          </div>
-          <div class="navigation-menu-group">
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link-header">Временное ограждение Euro</a>
-          </div>
-          <div class="navigation-menu-group">
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link-header">Рулонная сетка</a>
-          </div>
-          <div class="navigation-menu-group">
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link-header">Элементы ограждений Locinox</a>
-          </div>
-          <div class="navigation-menu-group">
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link-header">Парапетные крышки</a>
-          </div>
-          <div class="navigation-menu-group">
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link-header">Заглушки для профильной трубы</a>
+            <a class="navigation-menu-link-header" href="#" title="Перейти на страницу"> Далеко-далеко за словесными
+              горами в стране </a>
+            <a class="navigation-menu-link" href="#" title="Перейти на страницу"> Далеко-далеко за словесными горами в
+              стране гласных и согласных живут рыбные тексты</a>
           </div>
         </div>
         <div class="navigation-menu-category-content">
           <div class="navigation-menu-group">
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link-header"> Штакетник металлический </a>
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link">Штакетник Twin / Twin фигурный </a>
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link"> Штакетник Полукруглый Slim/ Полукруглый Slim фигурный</a>
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link">Круглый штакетник </a>
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link">Круглый штакетник </a>
+            <a class="navigation-menu-link-header" href="#" title="Перейти на страницу"> Заборы из профнастила </a>
+            <a class="navigation-menu-link" href="#" title="Перейти на страницу"> Стандартный профнастил </a>
+            <a class="navigation-menu-link" href="#" title="Перейти на страницу"> Фигурный профнастил </a>
+            <a class="navigation-menu-link" href="#" title="Перейти на страницу"> Декоративные столбы </a>
           </div>
           <div class="navigation-menu-group">
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link-header">Временное ограждение Practic</a>
+            <a class="navigation-menu-link-header" href="#" title="Перейти на страницу"> Штакетник металлический </a>
+            <a class="navigation-menu-link" href="#" title="Перейти на страницу">Штакетник Twin / Twin фигурный </a>
+            <a class="navigation-menu-link" href="#" title="Перейти на страницу"> Штакетник Полукруглый Slim/
+              Полукруглый Slim фигурный</a>
+            <a class="navigation-menu-link" href="#" title="Перейти на страницу">Круглый штакетник </a>
+            <a class="navigation-menu-link" href="#" title="Перейти на страницу">Круглый штакетник </a>
           </div>
           <div class="navigation-menu-group">
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link-header">Временное ограждение Euro</a>
+            <a class="navigation-menu-link-header" href="#" title="Перейти на страницу"> Панельные </a>
+            <a class="navigation-menu-link" href="#" title="Перейти на страницу"> Ограждения 3D для частного
+              сектора </a>
+            <a class="navigation-menu-link" href="#" title="Перейти на страницу"> Ограждения 3D для промышленных
+              объектов </a>
+            <a class="navigation-menu-link" href="#" title="Перейти на страницу"> 2D ограждения 2D для промышленных
+              объектов Bastion </a>
+            <a class="navigation-menu-link" href="#" title="Перейти на страницу"> Ограждения для спортплощадок</a>
+            <a class="navigation-menu-link" href="#" title="Перейти на страницу">Ограждения для промышленных объектов из
+              профильной трубы Protect </a>
+            <a class="navigation-menu-link" href="#" title="Перейти на страницу">Газонные ограждения </a>
           </div>
           <div class="navigation-menu-group">
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link-header">Рулонная сетка</a>
+            <a class="navigation-menu-link-header" href="#" title="Перейти на страницу">Временное ограждение Practic</a>
           </div>
           <div class="navigation-menu-group">
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link-header">Элементы ограждений Locinox</a>
+            <a class="navigation-menu-link-header" href="#" title="Перейти на страницу">Временное ограждение Euro</a>
           </div>
           <div class="navigation-menu-group">
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link-header">Парапетные крышки</a>
+            <a class="navigation-menu-link-header" href="#" title="Перейти на страницу">Рулонная сетка</a>
           </div>
           <div class="navigation-menu-group">
-            <a href="#" title="Перейти на страницу" class="navigation-menu-link-header">Заглушки для профильной трубы</a>
+            <a class="navigation-menu-link-header" href="#" title="Перейти на страницу">Элементы ограждений Locinox</a>
+          </div>
+          <div class="navigation-menu-group">
+            <a class="navigation-menu-link-header" href="#" title="Перейти на страницу">Парапетные крышки</a>
+          </div>
+          <div class="navigation-menu-group">
+            <a class="navigation-menu-link-header" href="#" title="Перейти на страницу">Заглушки для профильной
+              трубы</a>
+          </div>
+        </div>
+        <div class="navigation-menu-category-content">
+          <div class="navigation-menu-group">
+            <a class="navigation-menu-link-header" href="#" title="Перейти на страницу"> Штакетник металлический </a>
+            <a class="navigation-menu-link" href="#" title="Перейти на страницу">Штакетник Twin / Twin фигурный </a>
+            <a class="navigation-menu-link" href="#" title="Перейти на страницу"> Штакетник Полукруглый Slim/
+              Полукруглый Slim фигурный</a>
+            <a class="navigation-menu-link" href="#" title="Перейти на страницу">Круглый штакетник </a>
+            <a class="navigation-menu-link" href="#" title="Перейти на страницу">Круглый штакетник </a>
+          </div>
+          <div class="navigation-menu-group">
+            <a class="navigation-menu-link-header" href="#" title="Перейти на страницу">Временное ограждение Practic</a>
+          </div>
+          <div class="navigation-menu-group">
+            <a class="navigation-menu-link-header" href="#" title="Перейти на страницу">Временное ограждение Euro</a>
+          </div>
+          <div class="navigation-menu-group">
+            <a class="navigation-menu-link-header" href="#" title="Перейти на страницу">Рулонная сетка</a>
+          </div>
+          <div class="navigation-menu-group">
+            <a class="navigation-menu-link-header" href="#" title="Перейти на страницу">Элементы ограждений Locinox</a>
+          </div>
+          <div class="navigation-menu-group">
+            <a class="navigation-menu-link-header" href="#" title="Перейти на страницу">Парапетные крышки</a>
+          </div>
+          <div class="navigation-menu-group">
+            <a class="navigation-menu-link-header" href="#" title="Перейти на страницу">Заглушки для профильной
+              трубы</a>
           </div>
         </div>
         <div class="navigation-menu-category-content">В этой категории пока ничего нет.</div>
@@ -288,28 +318,30 @@
 <nav class="navigation-mobile" role="navigation">
   <div class="navigation-mobile-top">
     <div class="container navigation-mobile-top-container">
-      <button type="button" class="navigation-mobile-button" data-toggle=".navigation-mobile, .navigation-mobile-button, .navigation-mobile-fullscreen, .navigation-mobile-search, .navigation-mobile-top">
-        <img alt="навигация" class="lazy icon-open" src="assets/img/icon-navigation-mobile.svg" />
-        <img alt="навигация" class="lazy icon-close" src="assets/img/icon-navigation-mobile-close.svg" />
+      <button class="navigation-mobile-button"
+              data-toggle=".navigation-mobile, .navigation-mobile-button, .navigation-mobile-fullscreen, .navigation-mobile-search, .navigation-mobile-top"
+              type="button">
+        <img alt="навигация" class="lazy icon-open" src="src/assets/img/icon-navigation-mobile.svg" />
+        <img alt="навигация" class="lazy icon-close" src="src/assets/img/icon-navigation-mobile-close.svg" />
       </button>
-      <a href="index.html" class="navigation-mobile-logo">
-        <img alt="логотип" class="lazy" src="assets/img/navigation-mobile-logo.png" />
+      <a class="navigation-mobile-logo" href="index.html">
+        <img alt="логотип" class="lazy" src="src/assets/img/navigation-mobile-logo.png" />
       </a>
-      <a href="tel:8 (8452) 469-649" class="navigation-mobile-tel">
-        <img alt="телефон" class="lazy" src="assets/img/icon-navigation-mobile-tel.svg" />
+      <a class="navigation-mobile-tel" href="tel:8 (8452) 469-649">
+        <img alt="телефон" class="lazy" src="src/assets/img/icon-navigation-mobile-tel.svg" />
       </a>
-      <a href="cart.html" class="navigation-mobile-cart">
-        <img alt="корзина" class="lazy" src="assets/img/icon-navigation-mobile-cart.svg" />
+      <a class="navigation-mobile-cart" href="cart.html">
+        <img alt="корзина" class="lazy" src="src/assets/img/icon-navigation-mobile-cart.svg" />
         <div class="navigation-mobile-cart-quantity">12</div>
       </a>
     </div>
   </div>
   <div class="search-container navigation-mobile-search">
-    <input type="search" placeholder="Введите запрос..." class="search-input" />
+    <input class="search-input" placeholder="Введите запрос..." type="search" />
 
     <!-- Кнопка искать -->
-    <button type="button" class="search-button">
-      <!-- <img alt="искать" class="lazy" src="assets/img/icon-search.svg" /> -->
+    <button class="search-button" type="button">
+      <!-- <img alt="искать" class="lazy" src="src/assets/img/icon-search.svg" /> -->
       <div class="iconfont icon-search"></div>
     </button>
 
@@ -325,46 +357,46 @@
 
       <div class="navigation-mobile-calculator">
         <div>
-          <!-- <img alt="калькулятор" class="lazy" src="assets/img/icon-calculator.svg" /> -->
+          <!-- <img alt="калькулятор" class="lazy" src="src/assets/img/icon-calculator.svg" /> -->
           <div class="iconfont icon-calculator"></div>
           <span>Калькулятор</span>
         </div>
         <button type="button">
-          <!-- <img src="assets/img/icon-right.svg" alt="стрелка" class="lazy" /> -->
+          <!-- <img src="src/assets/img/icon-right.svg" alt="стрелка" class="lazy" /> -->
           <div class="iconfont icon-arrow-right"></div>
         </button>
       </div>
       <div class="navigation-mobile-quick-links">
-        <a href="offers.html" class="navigation-mobile-link">Акции</a>
-        <a href="text-page.html" class="navigation-mobile-link">О компании</a>
-        <a href="text-page.html" class="navigation-mobile-link">Производство</a>
-        <a href="solutions.html" class="navigation-mobile-link">Готовые решения</a>
-        <a href="text-page.html" class="navigation-mobile-link">Доставка и оплата</a>
-        <a href="contacts.html" class="navigation-mobile-link">Контакты</a>
+        <a class="navigation-mobile-link" href="offers.html">Акции</a>
+        <a class="navigation-mobile-link" href="text-page.html">О компании</a>
+        <a class="navigation-mobile-link" href="text-page.html">Производство</a>
+        <a class="navigation-mobile-link" href="solutions.html">Готовые решения</a>
+        <a class="navigation-mobile-link" href="text-page.html">Доставка и оплата</a>
+        <a class="navigation-mobile-link" href="contacts.html">Контакты</a>
       </div>
       <div class="navigation-mobile-bottom">
         <div class="navigation-mobile-location">
-          <!-- <img alt="адрес" class="lazy" src="assets/img/icon-location.svg" /> -->
+          <!-- <img alt="адрес" class="lazy" src="src/assets/img/icon-location.svg" /> -->
           <div class="iconfont icon-location"></div>
           <span> г. Саратов, ул. Чернышевского 94 </span>
         </div>
-        <a href="mailto:stroi-pro.a@yandex.ru" class="navigation-mobile-email">
-          <!-- <img alt="электронная почта'" class="lazy" src="assets/img/icon-mail.svg" /> -->
+        <a class="navigation-mobile-email" href="mailto:stroi-pro.a@yandex.ru">
+          <!-- <img alt="электронная почта'" class="lazy" src="src/assets/img/icon-mail.svg" /> -->
           <div class="iconfont icon-mail"></div>
           <span> stroi-pro.a@yandex.ru </span>
         </a>
-        <a href="tel:8 (8452) 469-649" class="navigation-mobile-tel">
-          <!-- <img alt="телефон" class="lazy" src="assets/img/icon-tel.svg" /> -->
+        <a class="navigation-mobile-tel" href="tel:8 (8452) 469-649">
+          <!-- <img alt="телефон" class="lazy" src="src/assets/img/icon-tel.svg" /> -->
           <div class="iconfont icon-tel"></div>
           <div>8 (8452) 469-649</div>
         </a>
       </div>
       <div class="navigation-mobile-messengers">
-        <a href="https://vk.com/" title="Перейти в наш VK" target="_blank" rel="noopener noreferrer">
-          <img alt="vk" class="lazy" src="assets/img/icon-vk.svg" />
+        <a href="https://vk.com/" rel="noopener noreferrer" target="_blank" title="Перейти в наш VK">
+          <img alt="vk" class="lazy" src="src/assets/img/icon-vk.svg" />
         </a>
-        <a href="https://telegram.org" title="Перейти в Telegram" target="_blank" rel="noopener noreferrer">
-          <img alt="telegram" class="lazy" src="assets/img/icon-telegram.svg" />
+        <a href="https://telegram.org" rel="noopener noreferrer" target="_blank" title="Перейти в Telegram">
+          <img alt="telegram" class="lazy" src="src/assets/img/icon-telegram.svg" />
         </a>
       </div>
     </div>

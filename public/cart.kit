@@ -3,64 +3,66 @@
 
 <!DOCTYPE html>
 <html lang="ru">
-  <!-- @import 'head.kit' -->
-  <body>
-    <!-- Контейнер для приложения -->
-    <div id="app" role="application">
-      <!-- @import 'navigation.kit' -->
+<!-- @import 'head.kit' -->
+<body>
+<!-- Контейнер для приложения -->
+<div id="app" role="application">
+  <!-- @import 'navigation.kit' -->
 
-      <!-- Основной контент страницы -->
-      <main role="main">
-        <!-- @import 'breadcrumbs.kit' -->
+  <!-- Основной контент страницы -->
+  <main role="main">
+    <!-- @import 'breadcrumbs.kit' -->
 
-        <section class="cart-section">
-          <div class="container">
-            <div class="section-top cart-section-top">
-              <div class="cart-section-top-inner">
-                <h1 class="page-title">
-                  <!-- $pageTitle -->
-                </h1>
-                <button type="button" title="Очистить корзину" class="cart-button-remove-all" data-cart="remove-all">Очистить</button>
-              </div>
-            </div>
-
-            <div class="cart-layout">
-              <div class="cart-list">
-                <div class="cart-empty" data-cart="thumb-empty">
-                  <div class="cart-empty-title">Корзина пока пустая</div>
-                  <a href="catalog.html" class="cart-empty-link"> Перейти в каталог </a>
-                </div>
-
-                <!-- @import 'cart-card.kit' -->
-                <!-- @import 'cart-card.kit' -->
-
-                <script type="text/javascript">
-                  // Это здесь просто для примера
-                  document.addEventListener("click", (event) => {
-                    if (event.target.closest("[data-cart=remove]")) {
-                      // Если добавить карточке display:none, все будет пересчитываться так будто ее нет
-                      event.target.closest("[data-cart=card]").style.display = "none";
-                    }
-
-                    if (event.target.closest("[data-cart=remove-all]")) {
-                      document.querySelectorAll("[data-cart=card]").forEach((card) => {
-                        card.style.display = "none";
-                      });
-                    }
-                  });
-                </script>
-              </div>
-              <div>
-                <!-- @import 'cart-result.kit' -->
-              </div>
-            </div>
+    <section class="cart-section">
+      <div class="container">
+        <div class="section-top cart-section-top">
+          <div class="cart-section-top-inner">
+            <h1 class="page-title">
+              <!-- $pageTitle -->
+            </h1>
+            <button class="cart-button-remove-all" data-cart="remove-all" title="Очистить корзину" type="button">
+              Очистить
+            </button>
           </div>
-        </section>
-      </main>
+        </div>
 
-      <!-- @import 'footer.kit' -->
-    </div>
+        <div class="cart-layout">
+          <div class="cart-list">
+            <div class="cart-empty" data-cart="thumb-empty">
+              <div class="cart-empty-title">Корзина пока пустая</div>
+              <a class="cart-empty-link" href="catalog.html"> Перейти в каталог </a>
+            </div>
 
-    <!-- @import 'scripts.kit' -->
-  </body>
+            <!-- @import 'cart-card.kit' -->
+            <!-- @import 'cart-card.kit' -->
+
+            <script type="text/javascript">
+              // Это здесь просто для примера
+              document.addEventListener("click", (event) => {
+                if (event.target.closest("[data-cart=remove]")) {
+                  // Если добавить карточке display:none, все будет пересчитываться так будто ее нет
+                  event.target.closest("[data-cart=card]").style.display = "none";
+                }
+
+                if (event.target.closest("[data-cart=remove-all]")) {
+                  document.body.querySelectorAll("[data-cart=card]").forEach((card) => {
+                    card.style.display = "none";
+                  });
+                }
+              });
+            </script>
+          </div>
+          <div>
+            <!-- @import 'cart-result.kit' -->
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- @import 'footer.kit' -->
+</div>
+
+<!-- @import 'scripts.kit' -->
+</body>
 </html>

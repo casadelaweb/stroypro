@@ -14,12 +14,28 @@
     "@types/node": "^20.4.0",
     "@typescript-eslint/eslint-plugin": "^5.45.0",
     "@typescript-eslint/parser": "^5.45.0",
-    "eslint": "^8.44.0"
+    "css-loader": "^6.7.1",
+    "eslint": "^8.44.0",
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.5.1",
+    "mini-css-extract-plugin": "^2.6.1",
+    "postcss": "^8.4.19",
+    "postcss-loader": "^7.0.1",
+    "postcss-preset-env": "^8.4.1",
+    "sass": "^1.62.1",
+    "sass-loader": "^13.2.0",
+    "swc-loader": "^0.2.3",
+    "typescript": "^5.0.4",
+    "webpack": "^5.84.1",
+    "webpack-cli": "^5.1.1",
+    "webpack-dev-server": "^4.11.1"
   },
   "dependencies": {
+    "body-scroll-lock": "^4.0.0-beta.0",
     "fancybox": "^3.0.1",
     "imask": "^7.1.0-alpha.0",
     "nouislider": "^15.7.1",
+    "restyle.css": "^1.0.8",
     "swiper": "^10.0.3",
     "vanilla-lazyload": "^17.8.3"
   }

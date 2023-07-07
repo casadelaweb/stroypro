@@ -1,0 +1,147 @@
+// Псевдо селект
+.pseudo-select {
+  // width: 320px;
+  width: 100%;
+  // height: 52px;
+  position: relative;
+
+  &-main {
+    // background: white;
+    position: relative;
+    // height: 52px;
+    height: 48px;
+    border: 1px solid #e2e2e5;
+    border-radius: 2px;
+    transition: 0.25s;
+
+    cursor: pointer;
+
+    // &:hover {
+    //   border-color: #747575;
+    // }
+
+    &.success {
+      border-color: $colorMain;
+    }
+
+    &.error {
+      border-color: $colorRed;
+    }
+  }
+
+  &-icon,
+  &-current,
+  &-placeholder {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transition: 0.25s;
+  }
+
+  &-current,
+  &-placeholder {
+    left: 0;
+    width: 100%;
+    padding: 0 40px 0 25px;
+    font-weight: 400;
+
+    font-size: 16px;
+    line-height: 1;
+    border: 0;
+    border-radius: 2px;
+  }
+
+  &-icon {
+    right: 20px;
+    color: #a0a0a9;
+
+    // font-size: 8px;
+    font-size: 10px;
+
+    &.activated {
+      transform: rotate(180deg);
+    }
+  }
+
+  &-current {
+    background: none;
+    z-index: 0;
+    opacity: 0;
+
+    &.activated {
+      opacity: 1;
+    }
+  }
+
+  &-placeholder {
+    z-index: 1;
+    color: #919191;
+
+    opacity: 1;
+    // visibility: visible;
+
+    &.activated {
+      opacity: 0;
+      // visibility: hidden;
+    }
+  }
+
+  &-list {
+    position: absolute;
+    z-index: -1;
+    // top: calc(100% - 4px);
+    top: calc(100% + 10px);
+    left: 0;
+    width: 100%;
+
+    background: white;
+    box-shadow: 0px 5px 20px 0px rgba(black, 0.1);
+    border-radius: 2px;
+
+    transform: translate(0, 20px);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: 0.25s;
+
+    &.activated {
+      z-index: 20;
+      transform: none;
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+
+    &-item {
+      transition: 0.25s;
+
+      padding: 10px 25px;
+
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.2;
+      // color: #32495e;
+      color: $colorText;
+
+      // background: white;
+      display: flex;
+      align-items: center;
+      column-gap: 20px;
+
+      position: relative;
+      cursor: pointer;
+
+      &:hover,
+      &.selected {
+        // background: $colorMain;
+        // color: white;
+        color: $colorMain;
+      }
+
+      // &-input {
+      // }
+    }
+  }
+}

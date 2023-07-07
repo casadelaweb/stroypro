@@ -1,0 +1,115 @@
+<!-- $pageTitle = Внутренняя страница каталога  -->
+<!-- $pageLink = catalog-inner.html-->
+
+<!DOCTYPE html>
+<html lang="ru">
+  <!-- @import 'head.kit' -->
+  <body>
+    <!-- Контейнер для приложения -->
+    <div id="app" role="application">
+      <!-- @import 'navigation.kit' -->
+
+      <!-- Основной контент страницы -->
+      <main role="main">
+        <!-- @import 'breadcrumbs.kit' -->
+
+        <section>
+          <div class="container">
+            <h1 class="page-title"><!-- $pageTitle --></h1>
+
+            <!-- Кнопка показать фильтры для мобильной версии -->
+            <button type="button" data-open-filters title="Показать фильтры">
+              <!-- <img src="assets/img/lazy.jpg" alt="показать фильтры" class="lazy" data-src="assets/img/icon-filters.svg" /> -->
+              <div class="iconfont icon-filters"></div>
+            </button>
+            <!-- -->
+            <div class="catalog-inner-layout">
+              <!-- Фильтры -->
+              <!-- @import 'catalog-inner-aside.kit' -->
+
+              <!-- Основной контент -->
+              <div>
+                <div class="catalog-inner-categories">
+                  <!-- @import 'catalog-inner-categories-item.kit' -->
+                  <!-- @import 'catalog-inner-categories-item.kit' -->
+                  <!-- @import 'catalog-inner-categories-item.kit' -->
+                  <!-- @import 'catalog-inner-categories-item.kit' -->
+                </div>
+                <!-- Сортировка -->
+                <div class="catalog-inner-sorting">
+                  <div class="catalog-inner-sorting-row">
+                    <div class="catalog-inner-sorting-caption">Сортировать по:</div>
+                    <!-- Обертка для селекта -->
+                    <div class="pseudo-select catalog-inner-pseudo-select">
+                      <div class="pseudo-select-main">
+                        <div class="pseudo-select-placeholder">Цена (по возрастанию)</div>
+                        <input type="text" class="pseudo-select-current" />
+                        <div class="pseudo-select-icon">
+                          <div class="iconfont icon-arrow-down"></div>
+                        </div>
+                      </div>
+                      <div class="pseudo-select-list">
+                        <label class="pseudo-select-list-item">
+                          <input type="radio" class="pseudo-select-list-item-input" hidden value="Цена (по возрастанию)" name="pseudo-select-group" />
+                          <span>Цена (по возрастанию)</span>
+                        </label>
+                        <label class="pseudo-select-list-item">
+                          <input type="radio" class="pseudo-select-list-item-input" hidden value="Цена (по убыванию)" name="pseudo-select-group" />
+                          <span>Цена (по убыванию)</span>
+                        </label>
+                        <label class="pseudo-select-list-item">
+                          <input type="radio" class="pseudo-select-list-item-input" hidden value="По популярности" name="pseudo-select-group" />
+                          <span>По популярности</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog-inner-sorting-row">
+                    <div class="catalog-inner-sorting-caption">Показывать по:</div>
+                    <div>
+                      <a href="catalog-inner.html" title="Показывать по 30" class="catalog-inner-sorting-button active">30</a>
+                      <a href="catalog-inner.html" title="Показывать по 60" class="catalog-inner-sorting-button">60</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Карточки товаров -->
+                <div class="catalog-inner-cards">
+                  <!-- @import 'catalog-inner-card.kit' -->
+                  <!-- @import 'catalog-inner-card.kit' -->
+                  <!-- @import 'catalog-inner-card.kit' -->
+                </div>
+                <!-- Пагинация -->
+                <div class="catalog-inner-pagination">
+                  <a href="catalog-inner.html" class="catalog-inner-pagination-prev">
+                    <div class="iconfont icon-arrow-left"></div>
+                  </a>
+                  <ul class="catalog-inner-pagination-list">
+                    <li class="catalog-inner-pagination-item">
+                      <a href="catalog-inner.html" class="catalog-inner-pagination-link active">1</a>
+                    </li>
+                    <li class="catalog-inner-pagination-item">
+                      <a href="catalog-inner.html" class="catalog-inner-pagination-link">2</a>
+                    </li>
+                    <li class="catalog-inner-pagination-item">
+                      <a href="catalog-inner.html" class="catalog-inner-pagination-link">...</a>
+                    </li>
+                    <li class="catalog-inner-pagination-item">
+                      <a href="catalog-inner.html" class="catalog-inner-pagination-link">3</a>
+                    </li>
+                  </ul>
+                  <a href="catalog-inner.html" class="catalog-inner-pagination-next">
+                    <div class="iconfont icon-arrow-right"></div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- @import 'footer.kit' -->
+    </div>
+
+    <!-- @import 'scripts.kit' -->
+  </body>
+</html>

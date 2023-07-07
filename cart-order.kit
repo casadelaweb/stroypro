@@ -1,0 +1,109 @@
+<!-- $pageTitle = Оформление заказа -->
+<!-- $pageLink = cart-order.html-->
+
+<!DOCTYPE html>
+<html lang="ru">
+  <!-- @import 'head.kit' -->
+  <body>
+    <!-- Контейнер для приложения -->
+    <div id="app" role="application">
+      <!-- @import 'navigation.kit' -->
+
+      <!-- Основной контент страницы -->
+      <main role="main">
+        <!-- @import 'breadcrumbs.kit' -->
+
+        <section>
+          <div class="container">
+            <h1 class="page-title">
+              <!-- $pageTitle -->
+            </h1>
+
+            <div class="cart-layout">
+              <div class="cart-order-content">
+                <div class="cart-order-contacts">
+                  <h3 class="cart-order-title">Контактные данные</h3>
+                  <div class="cart-order-subtitle">Обязательные поля отмечены - <span> * </span></div>
+                  <div class="cart-order-contacts-layout">
+                    <div>
+                      <div class="form-label">Имя <span>*</span></div>
+                      <input type="text" class="form-input cart-order-input" placeholder="Имя" required />
+                      <div class="form-input-note">Заполните поле “Имя”</div>
+                    </div>
+                    <div>
+                      <div class="form-label">Фамилия <span>*</span></div>
+                      <input type="text" class="form-input cart-order-input" placeholder="Фамилия" required />
+                      <div class="form-input-note">Заполните поле “Фамилия”</div>
+                    </div>
+                    <div>
+                      <div class="form-label">Телефон <span>*</span></div>
+                      <input type="tel" class="form-input cart-order-input" placeholder="+7 (___) ___-__-__" required />
+                      <div class="form-input-note">Заполните поле “Телефон”</div>
+                    </div>
+                    <div>
+                      <div class="form-label">Email <span>*</span></div>
+                      <input type="email" class="form-input cart-order-input" placeholder="Email" required />
+                      <div class="form-input-note">Заполните поле “Email”</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cart-order-shipping">
+                  <h3 class="cart-order-title">Способ доставки</h3>
+                  <div class="cart-order-tabs-navigation">
+                    <div class="cart-order-tabs-navigation-row">
+                      <div class="cart-order-tabs-navigation-item activated" data-tab="#tab-1">
+                        <div class="cart-order-tabs-navigation-item-title">Доставка курьером</div>
+                        <div class="cart-order-tabs-navigation-item-text">По Саратову и Энгельсу</div>
+                      </div>
+                      <div class="cart-order-tabs-navigation-item" data-tab="#tab-2">
+                        <div class="cart-order-tabs-navigation-item-title">Самовывоз</div>
+                        <div class="cart-order-tabs-navigation-item-text">Со склада г. Саратов, ул. Чернышевского, д. 94</div>
+                      </div>
+                      <div class="cart-order-tabs-navigation-item" data-tab="#tab-3">
+                        <div class="cart-order-tabs-navigation-item-title">Транспортная компания</div>
+                        <div class="cart-order-tabs-navigation-item-text">Удобная доставка в любой город России</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cart-order-tabs">
+                    <div id="tab-1" class="tab activated">
+                      <!-- @import 'cart-order-form.kit' -->
+                      <div class="cart-order-warning">
+                        <img src="assets/img/lazy.jpg" alt="важная заметка" class="lazy" data-src="assets/img/icon-warning.svg" />
+                        <div>
+                          Стоимость доставки рассчитывается отдельно. <br />
+                          Доставка по г. Саратову бесплатно при заказе от 100 000 ₽.
+                        </div>
+                      </div>
+                    </div>
+                    <div id="tab-2" class="tab">
+                      <!-- Эта вкладка пустая -->
+                    </div>
+                    <div id="tab-3" class="tab">
+                      <!-- @import 'cart-order-form.kit' -->
+                      <div class="cart-order-warning">
+                        <img src="assets/img/lazy.jpg" alt="важная заметка" class="lazy" data-src="assets/img/icon-warning.svg" />
+                        <div>Стоимость доставки рассчитывается отдельно.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cart-order-payment">
+                  <h3 class="cart-order-title">Способ оплаты</h3>
+                  <div class="cart-order-box">Оплата после согласования с менеджером</div>
+                </div>
+              </div>
+              <div>
+                <!-- @import 'cart-order-result.kit' -->
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- @import 'footer.kit' -->
+    </div>
+
+    <!-- @import 'scripts.kit' -->
+  </body>
+</html>

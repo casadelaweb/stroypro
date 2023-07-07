@@ -1,0 +1,471 @@
+<!-- $pageTitle: Главная страница-->
+
+<!DOCTYPE html>
+<html lang="ru">
+  <!-- @import 'head.kit' -->
+  <body>
+    <!-- Контейнер для приложения -->
+    <div id="app" role="application">
+      <!-- @import 'navigation.kit' -->
+
+      <!-- Основной контент страницы -->
+      <main role="main">
+        <!-- Баннеры на главной странице -->
+        <header class="header-banner" role="banner">
+          <div class="container header-banner-container">
+            <div class="header-banner-layout">
+              <div class="header-banner-item header-banner-item-main">
+                <img src="assets/img/lazy.jpg" alt="баннер" class="lazy header-banner-item-img" data-src="assets/img/header-banner-img-1.jpg" />
+                <div class="header-banner-item-overlay">
+                  <h2 class="header-banner-item-title">
+                    Кровельные и <br />
+                    фасадные материалы
+                  </h2>
+                  <h3 class="header-banner-item-subtitle">от эконом до премиум сегмента</h3>
+                  <a href="catalog.html" class="header-banner-item-button" title="Перейти на страницу">В каталог</a>
+                </div>
+              </div>
+              <div class="header-banner-item header-banner-item-roofing">
+                <img src="assets/img/lazy.jpg" alt="баннер" class="lazy header-banner-item-img" data-src="assets/img/header-banner-img-2.jpg" />
+                <div class="header-banner-item-overlay">
+                  <h2 class="header-banner-item-title">Монтаж кровли</h2>
+                  <a href="#" class="header-banner-item-button" title="Перейти на страницу">Подробнее</a>
+                </div>
+              </div>
+              <div class="header-banner-item header-banner-item-siding">
+                <img src="assets/img/lazy.jpg" alt="баннер" class="lazy header-banner-item-img" data-src="assets/img/header-banner-img-3.jpg" />
+                <div class="header-banner-item-overlay">
+                  <h2 class="header-banner-item-title">Скидки на сайдинг <br />до 30%</h2>
+                  <a href="#" class="header-banner-item-button" title="Перейти на страницу">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header-banner-mobile">
+            <div class="header-banner-mobile-slider slider">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <!-- @import 'header-banner-mobile-slide.kit' -->
+                  </div>
+                  <div class="swiper-slide">
+                    <!-- @import 'header-banner-mobile-slide.kit' -->
+                  </div>
+                  <div class="swiper-slide">
+                    <!-- @import 'header-banner-mobile-slide.kit' -->
+                  </div>
+                  <div class="swiper-slide">
+                    <!-- @import 'header-banner-mobile-slide.kit' -->
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <!-- Секция Наши партнеры -->
+        <section class="our-partners-section">
+          <div class="container">
+            <div class="slider our-partners-slider">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="our-partners-slide">
+                      <img src="assets/img/lazy.jpg" alt="изображение" data-src="assets/img/partners-img.png" class="swiper-lazy" />
+                      <div class="swiper-lazy-preloader"></div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="our-partners-slide">
+                      <img src="assets/img/lazy.jpg" alt="изображение" data-src="assets/img/partners-img.png" class="swiper-lazy" />
+                      <div class="swiper-lazy-preloader"></div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="our-partners-slide">
+                      <img src="assets/img/lazy.jpg" alt="изображение" data-src="assets/img/partners-img.png" class="swiper-lazy" />
+                      <div class="swiper-lazy-preloader"></div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="our-partners-slide">
+                      <img src="assets/img/lazy.jpg" alt="изображение" data-src="assets/img/partners-img.png" class="swiper-lazy" />
+                      <div class="swiper-lazy-preloader"></div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="our-partners-slide">
+                      <img src="assets/img/lazy.jpg" alt="изображение" data-src="assets/img/partners-img.png" class="swiper-lazy" />
+                      <div class="swiper-lazy-preloader"></div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="our-partners-slide">
+                      <img src="assets/img/lazy.jpg" alt="изображение" data-src="assets/img/partners-img.png" class="swiper-lazy" />
+                      <div class="swiper-lazy-preloader"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+        </section>
+        <!-- Секция каталог -->
+        <section class="catalog-section">
+          <div class="container">
+            <div class="catalog-section-top section-top">
+              <h2 class="catalog-section-title">Каталог</h2>
+              <a href="catalog.html" class="catalog-section-top-link">Смотреть все</a>
+            </div>
+            <div class="catalog-section-layout">
+              <!-- Ворота и калитки -->
+              <a href="catalog.html" class="catalog-section-card gates" title="Перейти в каталог">
+                <h3 class="catalog-section-card-title">
+                  Ворота <br />
+                  и калитки
+                </h3>
+                <!-- Кнопка декоративная, ссылкой является сама карточка -->
+                <div class="catalog-section-card-button">В каталог</div>
+                <div class="catalog-section-card-img">
+                  <img src="assets/img/lazy.jpg" alt="ворота и калитки" class="lazy" data-src="assets/img/catalog-section-card-gates.png" />
+                </div>
+              </a>
+              <a href="catalog.html" class="catalog-section-card siding" title="Перейти в каталог">
+                <h3 class="catalog-section-card-title">Сайдинг</h3>
+                <!-- Кнопка декоративная, ссылкой является сама карточка -->
+                <div class="catalog-section-card-button">В каталог</div>
+                <div class="catalog-section-card-img">
+                  <img src="assets/img/lazy.jpg" alt="ворота и калитки" class="lazy" data-src="assets/img/catalog-section-card-siding.png" />
+                </div>
+              </a>
+              <a href="catalog.html" class="catalog-section-card fences" title="Перейти в каталог">
+                <h3 class="catalog-section-card-title">
+                  Заборы и <br />
+                  ограждения
+                </h3>
+                <!-- Кнопка декоративная, ссылкой является сама карточка -->
+                <div class="catalog-section-card-button">В каталог</div>
+                <div class="catalog-section-card-img">
+                  <img src="assets/img/lazy.jpg" alt="ворота и калитки" class="lazy" data-src="assets/img/catalog-section-card-fences.png" />
+                </div>
+              </a>
+              <a href="catalog.html" class="catalog-section-card panels" title="Перейти в каталог">
+                <h3 class="catalog-section-card-title">Фасадные панели</h3>
+                <!-- Кнопка декоративная, ссылкой является сама карточка -->
+                <div class="catalog-section-card-button">В каталог</div>
+                <div class="catalog-section-card-img">
+                  <img src="assets/img/lazy.jpg" alt="ворота и калитки" class="lazy" data-src="assets/img/catalog-section-card-panels.png" />
+                </div>
+              </a>
+              <a href="catalog.html" class="catalog-section-card roofing" title="Перейти в каталог">
+                <h3 class="catalog-section-card-title">Кровля</h3>
+                <!-- Кнопка декоративная, ссылкой является сама карточка -->
+                <div class="catalog-section-card-button">В каталог</div>
+                <div class="catalog-section-card-img">
+                  <img src="assets/img/lazy.jpg" alt="ворота и калитки" class="lazy" data-src="assets/img/catalog-section-card-roofing.png" />
+                </div>
+              </a>
+            </div>
+            <div class="catalog-section-layout-mobile">
+              <div class="catalog-section-layout-mobile-main">
+                <a href="catalog.html" class="catalog-section-card gates" title="Перейти в каталог">
+                  <h3 class="catalog-section-card-title">
+                    Ворота <br />
+                    и калитки
+                  </h3>
+                  <!-- Кнопка декоративная, ссылкой является сама карточка -->
+                  <div class="catalog-section-card-button">В каталог</div>
+                  <div class="catalog-section-card-img">
+                    <img src="assets/img/lazy.jpg" alt="ворота и калитки" class="lazy" data-src="assets/img/catalog-section-card-gates.png" />
+                  </div>
+                </a>
+              </div>
+              <div class="catalog-section-layout-mobile-row">
+                <a href="catalog.html" class="catalog-section-card fences" title="Перейти в каталог">
+                  <h3 class="catalog-section-card-title">
+                    Заборы и <br />
+                    ограждения
+                  </h3>
+                  <!-- Кнопка декоративная, ссылкой является сама карточка -->
+                  <div class="catalog-section-card-button">В каталог</div>
+                  <div class="catalog-section-card-img">
+                    <img src="assets/img/lazy.jpg" alt="ворота и калитки" class="lazy" data-src="assets/img/catalog-section-card-mobile-fences.png" />
+                  </div>
+                </a>
+                <a href="catalog.html" class="catalog-section-card siding" title="Перейти в каталог">
+                  <h3 class="catalog-section-card-title">Сайдинг</h3>
+                  <!-- Кнопка декоративная, ссылкой является сама карточка -->
+                  <div class="catalog-section-card-button">В каталог</div>
+                  <div class="catalog-section-card-img">
+                    <img src="assets/img/lazy.jpg" alt="ворота и калитки" class="lazy" data-src="assets/img/catalog-section-card-siding.png" />
+                  </div>
+                </a>
+                <a href="catalog.html" class="catalog-section-card panels" title="Перейти в каталог">
+                  <h3 class="catalog-section-card-title">Фасадные панели</h3>
+                  <!-- Кнопка декоративная, ссылкой является сама карточка -->
+                  <div class="catalog-section-card-button">В каталог</div>
+                  <div class="catalog-section-card-img">
+                    <img src="assets/img/lazy.jpg" alt="ворота и калитки" class="lazy" data-src="assets/img/catalog-section-card-panels.png" />
+                  </div>
+                </a>
+                <a href="catalog.html" class="catalog-section-card roofing" title="Перейти в каталог">
+                  <h3 class="catalog-section-card-title">Кровля</h3>
+                  <!-- Кнопка декоративная, ссылкой является сама карточка -->
+                  <div class="catalog-section-card-button">В каталог</div>
+                  <div class="catalog-section-card-img">
+                    <img src="assets/img/lazy.jpg" alt="ворота и калитки" class="lazy" data-src="assets/img/catalog-section-card-roofing.png" />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Секция Готовые решения -->
+        <section class="solutions-section">
+          <div class="container">
+            <div class="solutions-section-top section-top">
+              <h2 class="text-center">Готовые решения</h2>
+              <a href="solutions.html" class="solutions-section-top-button">
+                <div class="iconfont icon-arrow-right"></div>
+              </a>
+            </div>
+
+            <div class="solutions-list">
+              <div class="solutions-item">
+                <div class="solutions-item-img">
+                  <img src="assets/img/lazy.jpg" alt="готовое решение" class="lazy" data-src="assets/img/solutions-item-img-1.jpg" />
+                  <div class="solutions-item-price">
+                    <div class="solutions-item-price-content">1250 ₽ / м2</div>
+                  </div>
+                </div>
+                <div>
+                  <h2 class="solutions-item-title">Комплект материалов для утепления фасада "мокрый фасад"</h2>
+                  <div class="solutions-item-description">
+                    <p>Перед тем как укомплектовать фасад по нашему решения мы производим замер и точный расчет фасадного решения. Упростите себе процесс снабжения материалами, заказав все необходимое в одном месте.</p>
+                    <p>Для покупки фасадного комплекта даже не обязательно приезжать в офис, наш специалист приедет в удобное для вас место для заключения договора и примет оплату любым удобным для вас способом.</p>
+                  </div>
+                  <ul class="solutions-item-advantages">
+                    <li>Клей для приклеивания теплоизоляции КТП – 500</li>
+                    <li>Клей для армирования КТУ - 1000</li>
+                    <li>ПСБ-С 25Ф пенополистирол</li>
+                    <li>Декоративная минеральная штукатурка Deko Короед</li>
+                    <li>Стеклосетка ISOMAX</li>
+                    <li>Краска фасадная ПСС</li>
+                    <li>Глубокопроникающий грунт универсальный</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="solutions-item">
+                <div class="solutions-item-img">
+                  <img src="assets/img/lazy.jpg" alt="готовое решение" class="lazy" data-src="assets/img/solutions-item-img-2.jpg" />
+                  <div class="solutions-item-price">
+                    <div class="solutions-item-price-content">1250 ₽ / м2</div>
+                  </div>
+                </div>
+                <div>
+                  <h2 class="solutions-item-title">Металлочерепица классик</h2>
+                  <div class="solutions-item-description">
+                    <p>
+                      Перед тем как укомплектовать вашу кровлю по нашему решения мы производим замер кровли и точный расчет кровельного решения. Упростите себе процесс снабжения кровельщиков материалами, заказав все необходимое в одном
+                      месте. Для покупки кровельного комплекта даже не обязательно приезжать в офис, наш специалист приедет в удобное для вас место для заключения договора и примет оплату любым удобным для вас способом.
+                    </p>
+                  </div>
+                  <ul class="solutions-item-advantages">
+                    <li>Металлочерепица Grand Line</li>
+                    <li>Пленка гидро-паро изоляционная Ondutis</li>
+                    <li>Шаговая обрешетка 25*150 мм</li>
+                    <li>Деревянная стропильная система 50х150 мм</li>
+                    <li>Контр. брусок 30х50</li>
+                  </ul>
+                  <a href="solutions.html" class="solutions-catalog-link">Все решения</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Секция Объекты, построенные из наших материалов -->
+        <section class="objects-our-materials-section">
+          <div class="container">
+            <div class="objects-our-materials">
+              <div class="objects-our-materials-content">
+                <h2 class="objects-our-materials-title">Объекты построенные из наших материалов</h2>
+                <div class="objects-our-materials-description">Перед тем как укомплектовать фасад по нашему решения мы производим замер и точный расчет фасадного решения.</div>
+                <a href="#" class="objects-our-materials-button">Калькулятор</a>
+              </div>
+              <div class="objects-our-materials-slider slider">
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <a
+                        href="assets/img/objects-our-materials-img-1.jpg"
+                        class="objects-our-materials-slide"
+                        title="Перейти в полноэкранный режим"
+                        data-fancybox="objects-our-materials-gallery"
+                        data-caption="Краткое описание изображения, если оно есть"
+                      >
+                        <img src="assets/img/lazy.jpg" alt="изображение" data-src="assets/img/objects-our-materials-img-1.jpg" class="swiper-lazy" />
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a
+                        href="assets/img/objects-our-materials-img-2.jpg"
+                        class="objects-our-materials-slide"
+                        title="Перейти в полноэкранный режим"
+                        data-fancybox="objects-our-materials-gallery"
+                        data-caption="Краткое описание изображения, если оно есть"
+                      >
+                        <img src="assets/img/lazy.jpg" alt="изображение" data-src="assets/img/objects-our-materials-img-2.jpg" class="swiper-lazy" />
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a
+                        href="assets/img/objects-our-materials-img-1.jpg"
+                        class="objects-our-materials-slide"
+                        title="Перейти в полноэкранный режим"
+                        data-fancybox="objects-our-materials-gallery"
+                        data-caption="Краткое описание изображения, если оно есть"
+                      >
+                        <img src="assets/img/lazy.jpg" alt="изображение" data-src="assets/img/objects-our-materials-img-1.jpg" class="swiper-lazy" />
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a
+                        href="assets/img/objects-our-materials-img-2.jpg"
+                        class="objects-our-materials-slide"
+                        title="Перейти в полноэкранный режим"
+                        data-fancybox="objects-our-materials-gallery"
+                        data-caption="Краткое описание изображения, если оно есть"
+                      >
+                        <img src="assets/img/lazy.jpg" alt="изображение" data-src="assets/img/objects-our-materials-img-2.jpg" class="swiper-lazy" />
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a
+                        href="assets/img/objects-our-materials-img-1.jpg"
+                        class="objects-our-materials-slide"
+                        title="Перейти в полноэкранный режим"
+                        data-fancybox="objects-our-materials-gallery"
+                        data-caption="Краткое описание изображения, если оно есть"
+                      >
+                        <img src="assets/img/lazy.jpg" alt="изображение" data-src="assets/img/objects-our-materials-img-1.jpg" class="swiper-lazy" />
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a
+                        href="assets/img/objects-our-materials-img-2.jpg"
+                        class="objects-our-materials-slide"
+                        title="Перейти в полноэкранный режим"
+                        data-fancybox="objects-our-materials-gallery"
+                        data-caption="Краткое описание изображения, если оно есть"
+                      >
+                        <img src="assets/img/lazy.jpg" alt="изображение" data-src="assets/img/objects-our-materials-img-2.jpg" class="swiper-lazy" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Секция Популярные товары -->
+        <section>
+          <div class="container">
+            <h2>Популярные товары</h2>
+            <div class="popular-slider slider">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <!-- @import 'catalog-card.kit' -->
+                  </div>
+                  <div class="swiper-slide">
+                    <!-- @import 'catalog-card-2.kit' -->
+                  </div>
+                  <div class="swiper-slide">
+                    <!-- @import 'catalog-card.kit' -->
+                  </div>
+                  <div class="swiper-slide">
+                    <!-- @import 'catalog-card-2.kit' -->
+                  </div>
+                  <div class="swiper-slide">
+                    <!-- @import 'catalog-card.kit' -->
+                  </div>
+                  <div class="swiper-slide">
+                    <!-- @import 'catalog-card-2.kit' -->
+                  </div>
+                  <div class="swiper-slide">
+                    <!-- @import 'catalog-card.kit' -->
+                  </div>
+                  <div class="swiper-slide">
+                    <!-- @import 'catalog-card-2.kit' -->
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Секция Остались вопросы?-->
+        <section class="got-questions-section">
+          <div class="container got-questions-container">
+            <div class="got-questions-layout">
+              <div class="got-questions-phone">
+                <div class="got-questions-phone-title">
+                  Собственное <br />
+                  производство
+                  <!-- Декоративная картинка со стрелочкой (мобильная) -->
+                  <img src="assets/img/lazy.jpg" alt="декоративный элемент" class="lazy got-questions-phone-decor-mobile" data-src="assets/img/phone-decor-mobile.png" />
+                </div>
+
+                <div class="relative">
+                  <!-- Рамка в форме телефона -->
+                  <img src="assets/img/lazy.jpg" alt="рамка для видео" class="lazy got-questions-border" data-src="assets/img/phone.png" />
+
+                  <!-- Постер имеет те же стили что и видео и изначально активен-->
+                  <img src="assets/img/lazy.jpg" alt="видео" class="lazy got-questions-video activated" data-src="assets/img/video-poster.png" />
+                  <!-- Видео изначально неактивно -->
+                  <iframe class="lazy got-questions-video" data-src="https://www.youtube.com/embed/dQw4w9WgXcQ" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                  <!-- Кнопка переключает активность постер и видео -->
+                  <button type="button" class="got-questions-button-play" title="Включить видео" data-toggle=".got-questions-button-play, .got-questions-video">
+                    <img src="assets/img/lazy.jpg" alt="включить видео" class="lazy" data-src="assets/img/button-play.png" />
+                  </button>
+
+                  <!-- Декоративная картинка со стрелочкой -->
+                  <img src="assets/img/lazy.jpg" alt="декоративный элемент" class="lazy got-questions-phone-decor" data-src="assets/img/phone-decor.png" />
+                </div>
+              </div>
+              <div class="got-questions-main">
+                <!-- Декоративная картинка со стрелочкой -->
+                <img src="assets/img/lazy.jpg" alt="декоративный элемент" class="lazy got-questions-main-decor" data-src="assets/img/main-decor.png" />
+                <!-- Декоративная картинка со стрелочкой (мобильная) -->
+                <img src="assets/img/lazy.jpg" alt="декоративный элемент" class="lazy got-questions-main-decor-mobile" data-src="assets/img/main-decor-mobile.png" />
+
+                <form class="form got-questions-form">
+                  <h2 class="got-questions-title">Остались вопросы?</h2>
+                  <div class="got-questions-subtitle">Введите свои данные и мы свяжемся с вами и проконсультируем по любому вопросу</div>
+                  <div class="got-questions-inputs">
+                    <input type="text" placeholder="Имя" required class="form-input" />
+                    <input type="tel" placeholder="+7 (___) ___-__-__" required class="form-input" />
+                    <input type="text" placeholder="Email" required class="form-input" />
+                  </div>
+                  <div class="got-questions-note">Нажимая на кнопку “Отправить” вы даете согласие на хранение и обработку персональных данных</div>
+                  <button type="" class="form-submit got-questions-submit">Отправить</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- @import 'footer.kit' -->
+    </div>
+
+    <!-- @import 'scripts.kit' -->
+  </body>
+</html>

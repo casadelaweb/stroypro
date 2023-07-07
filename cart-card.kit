@@ -1,0 +1,91 @@
+<!-- Пример карточки в корзине-->
+<div class="cart-card" data-cart="card">
+  <div class="cart-card-top">
+    <a href="catalog-detail.html" title="Перейти на страницу товара" class="cart-card-img">
+      <img class="lazy" src="assets/img/lazy.jpg" data-src="assets/img/cart-card-img.png" />
+    </a>
+
+    <div class="cart-card-info">
+      <a href="catalog-detail.html" title="Перейти на страницу товара" class="cart-card-title">Сталь Блок-хаус 0,390 Grand Line 0,45 PE RAL 8017 шоколад</a>
+      <div class="cart-card-article">
+        Артикул
+        <span> 223569 </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="cart-card-prices">
+    <div class="cart-card-price">
+      <span data-cart="price">9 990</span>
+      <span>₽</span>
+    </div>
+    <div class="cart-card-price-old">
+      <span>10 990</span>
+      <span>₽</span>
+    </div>
+  </div>
+
+  <!-- Количество товара -->
+  <div class="cart-card-quantity quantity-container">
+    <button type="button" class="quantity-button quantity-button-decrement" title="Уменьшить">-</button>
+    <!-- Если не указывать data-value-min / data-value-max, по-умолчанию будет 0 и 999 -->
+    <input type="number" class="quantity-input" value="4" data-cart="quantity" />
+    <button type="button" class="quantity-button quantity-button-increment" title="Увеличить">+</button>
+  </div>
+  <!-- Цена с учетом количества товаров -->
+  <div class="cart-card-price-summary">
+    <span data-cart="summary">
+      <!-- Рассчитываем значение и подставляем через js -->
+    </span>
+    <span>₽</span>
+  </div>
+  <button type="button" class="cart-card-button-remove" title="Убрать из корзины" data-cart="remove">
+    <img src="assets/img/lazy.jpg" alt="удалить из корзины" class="lazy" data-src="assets/img/icon-cart-delete.svg" />
+  </button>
+</div>
+
+<!-- Пример карточки в корзине-->
+<div class="cart-card" data-cart="card">
+  <div class="cart-card-top">
+    <a href="catalog-detail.html" title="Перейти на страницу товара" class="cart-card-img">
+      <img class="lazy" src="assets/img/lazy.jpg" data-src="assets/img/catalog-card-img.png" />
+    </a>
+
+    <div class="cart-card-info">
+      <a href="catalog-detail.html" title="Перейти на страницу товара" class="cart-card-title"> Вот у этого товара задано минимальное значение 1 и максимальное 456 (для примера)</a>
+      <div class="cart-card-article">
+        Артикул
+        <span> 223569 </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="cart-card-prices">
+    <div class="cart-card-price">
+      <span data-cart="price">790</span>
+      <span>₽</span>
+    </div>
+    <div class="cart-card-price-old">
+      <span>990</span>
+      <span>₽</span>
+    </div>
+  </div>
+
+  <!-- Количество товара -->
+  <div class="cart-card-quantity quantity-container">
+    <button type="button" class="quantity-button quantity-button-decrement" title="Уменьшить">-</button>
+    <!-- Если не указывать data-value-min / data-value-max, по-умолчанию будет 0 и 999 -->
+    <input type="number" class="quantity-input" value="10" data-value-min="1" data-value-max="456" data-cart="quantity" />
+    <button type="button" class="quantity-button quantity-button-increment" title="Увеличить">+</button>
+  </div>
+  <!-- Цена с учетом количества товаров -->
+  <div class="cart-card-price-summary">
+    <span data-cart="summary">
+      <!-- Рассчитываем значение и подставляем через js -->
+    </span>
+    <span>₽</span>
+  </div>
+  <button type="button" class="cart-card-button-remove" title="Убрать из корзины" data-cart="remove">
+    <img src="assets/img/lazy.jpg" alt="удалить из корзины" class="lazy" data-src="assets/img/icon-cart-delete.svg" />
+  </button>
+</div>

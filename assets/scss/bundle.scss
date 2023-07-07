@@ -1,0 +1,24 @@
+// Переменные, шаблоны, примеси, сетка
+@import "./vars.scss";
+
+// Сброс стилей
+@import "./restart.scss";
+
+// Локальные шрифты
+@import "./fonts.scss";
+
+// Импортируем слайдер
+@import "./libs/swiper-bundle.scss";
+
+// Импортируем фенсибокс
+// Не указываем расширение чтобы импортировать стили внутрь scss файла
+@import "./libs/fancybox";
+
+// Range slideк для каталога
+@import "./libs/nouislider";
+
+// Импортируем псевдо селекты
+@import "./libs/pseudo-select.scss";
+
+// Собственные стили приложения
+@import "./app.scss";

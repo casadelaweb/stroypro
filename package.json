@@ -1,0 +1,11 @@
+{
+  "name": "stroypro",
+  "version": "1.0.0",
+  "description": "Front end for stroypro",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "cdlw.ru",
+  "license": "ISC"
+}
